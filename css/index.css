@@ -19,7 +19,7 @@ body,html {
     height: 100%;
     overflow: hidden;
     position: relative;
-    background-image: url(../images/Chicago/chicagoCanal.ashx);
+    background-image: url(../images/Chicago/chicagoCanal.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,11 +36,11 @@ h2 {
 
     background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
     background-size: 400%;
-    font-size: 72px;
+    font-size: 5rem;
     font-family: monospace;
-    letter-spacing: 10px;
+    letter-spacing: 0.33rem;
     font-weight: bold 900;
-    word-spacing: 10px;
+    word-spacing: 0.33rem;
 
     /* Below code width will not shrink below 300px, width exceed 600px, */
     /* Below code height will not shrink below 150px, width exceed 300px, */
@@ -74,11 +74,11 @@ h2 span {
 
     background: linear-gradient(90deg, #e6e929, #0033ff, #283ae0, #f7f332, #5144ff, #0413eed7);
     background-size: 400%;
-    font-size: 120px;
+    font-size: 8rem;
     font-family: serif;
-    letter-spacing: 10px;
+    letter-spacing: 0.33rem;
     font-weight: 1000; /* font-weight of 700 = bold */
-    word-spacing: 10px;
+    word-spacing: 0.33rem;
 
     /* Below code width will not shrink below 300px, width exceed 600px, */
     /* Below code height will not shrink below 150px, width exceed 300px, */
@@ -114,8 +114,8 @@ h2 span {
 
 .content h1{
     color: #fff;
-    font-size: 60px;
-    letter-spacing: 15px;
+    font-size: 2.80rem;
+    letter-spacing: 1rem;
 }
 
 /* This is for text between span section */
@@ -125,10 +125,10 @@ h2 span {
 
 .content a{
     background: lightblue;
-    padding: 20px 44px;
+    padding: 1.25rem 2.33rem;
     text-decoration: none;
-    font-size: 18px;
-    border-radius: 20px;
+    font-size: 1.125rem;
+    border-radius: 1.25rem;
 }
 
 .content a:hover{
@@ -139,7 +139,7 @@ h2 span {
 @keyframes change{
     0%
     {
-        background-image: url(../images/Chicago/chicagoCanal.ashx);
+        background-image: url(../images/Chicago/chicagoCanal.jpg);
     }
     15%
     {
