@@ -1,0 +1,491 @@
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+/* Base Font of a browser is 16 px, so 1em = 16px */
+/* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
+
+body{
+    margin: 0;
+    padding: 0;
+    /*
+    background: rgba(2, 6, 223, 0.85);
+    */
+    background: rgb(136, 208, 236); /*sky-blue*/
+}
+
+/*Scrolling Text Section*/
+marquee{
+    font-family: Arial;
+    font-size: 1.0rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* HEADER SECTION BEGIN */
+header {
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+        /*
+    background: rgb(136, 208, 236);
+    */ /*sky-blue*/
+    
+    /* Use the below color when working on this section */
+    /*
+    background-color: gray;
+    */
+    
+    
+    /* Use the below bottom border to see where the box ends
+    border-bottom: 0.125rem solid rgb(3, 3, 255);*/ /* color: blue; */
+    
+
+
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    /* To set Menu bar (top of webpage = 0px) */
+    top: 20px;
+    left: 40px;
+    /* below code is to make sure item covers entire webpage */
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;}
+
+/* puts menu list in a row begin */
+header ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+header ul li a {
+    display: block;
+    font-family: Arial;
+    color: black;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+}
+
+/* To make the list a dropdown, change display to none.*/
+header ul li ul {
+    /*display: block;*/
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 4px 4px;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 150px;
+    border-radius: 4px;
+}
+
+header ul li ul li a {
+    padding: 8px 12px;
+}
+
+header ul li ul li a:hover a {
+    display: block;
+}
+
+/* Below code doesn't work.  Need to find one that will change the color when being used */
+header ul li ul li a:hover {
+    background-color: skyblue;
+    /* code to make background transparent */
+    background: rgba(0, 0, 0, 0, .7);
+}
+/* puts menu list in a row end */
+/* HEADER SECTION BEGIN */
+
+
+
+
+/* color for MENU and CONTACT begin */
+a.whitemenu {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.whitemenu:hover {
+    background: lightblue;
+    transform: translateZ(10px);
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 0px 0px;
+}
+
+a.yellowmenu {
+    color: yellow;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.yellowmenu:hover {
+    background: lightblue;
+    transform: translateZ(20px);
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 0px 0px;
+}
+/* color for MENU and CONTACT end */
+
+
+
+
+/* Animates text begin*/
+h1 {
+    position: absolute;
+    top: 1.5rem;
+    /* Aligns AmerKorAsian at top of page */
+    left: 33%;
+    text-align: center;
+
+
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    background-size: 400%;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    letter-spacing: 0.40rem;
+    font-weight: 600;
+    /*
+    word-spacing: 1.70rem;
+    */
+
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+/* Animates text end*/
+
+/* Removes dot in front of hyperlinked word */
+li {
+    list-style-type: none;
+}
+
+
+
+/* code for Fibonacci Spiral BEGIN */
+#change-logo-size {
+    /*
+    height: 650px;
+    width: 650px;
+    top: 80%;
+    */
+    height: 600px;
+    width: 600px;
+    display: block;
+    
+    margin: 0 auto;
+    align-items: center;
+    
+    /* adds a shadow to the image*/
+    /*filter: drop-shadow(2px 2px 2px white);*/
+}
+/* code for Fibonacci Spiral END */
+
+
+/* code for MOTTO BEGIN */
+#motto {
+    font-size: 35px;
+    text-align: center;
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    background-size: 400%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+/* code for MOTTO END */
+
+
+
+/* IMAGE SLIDER BEGIN */
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: 100% /*calc(250px * 14)*/;
+    animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(calc(-250px * 7));
+    }
+}
+
+.slide {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    perspective: 100px;
+}
+
+/* TEXT ON BACK OF IMAGE BEGIN */
+.imageBack {
+    position: relative;
+    width: 300px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-display: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* with an opacity of zero, text is hidden by default */
+    opacity: 0;
+    text-decoration: none;
+}
+
+
+/* Makes text color on back of image overlay white */
+.image__overlay a {
+    text-decoration: none;
+    list-style: none;
+    color: white
+}
+
+.image__overlay:hover {
+    /* with an opacity of 1 when hovering, the text information will appear on top of image */
+    opacity: 1;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+/* TEXT ON BACK OF IMAGE END */
+
+img {
+    height: 50%;
+    width: 50%;
+    transition: transform 1s;
+    /* code below is suppose to round the edges of images when viewed on website */
+    border-radius: 0px 0px 0px 0px;
+}
+
+img:hover {
+    transform: translateZ(20px);
+    /* with an opacity of 1 when hovering, the text information will appear on top of image */
+    opacity: 1;
+}
+/* IMAGE SLIDER END */
+
+
+
+
+
+
+/* CLOCKS BEGIN */
+/* NEW YORK AND CHICAGO CLOCKS */
+.iframe-container {
+    position: relative;
+    justify-content: right;
+    /* PUTS ALL IMAGES IN A COLUMN
+    flex-direction: column;
+    */
+    text-align: right;
+    width: 100%;
+    padding: 0rem 1.25rem;
+}
+
+/* LONDON AND SEOUL CLOCKS */
+.iframe-container2 {
+    position: relative;
+    justify-content: right;
+    text-align: right;
+    width: 100%;
+    padding: 0rem 1.25rem;
+}
+
+#textPlace {
+position:relative;
+text-align: right;
+color: yellow;
+font-weight: bold;
+justify-content: center;
+
+}
+/* CLOCKS END */
+
+
+
+
+
+
+
+
+
+/* Text color for website disclaimer on bottom of webpage begin */
+a.small {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* Text color for documents link on bottom of webpage */
+a.red {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    list-style: none;
+    /* Removes the line under linked word(s) */
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b {
+    color: rgb(12, 12, 12);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+r {
+    color: red;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a.redmenu {
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.redmenu:hover {
+    background: lightblue;
+    transform: translateZ(20px);
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 0px 0px;
+}
+
+w {
+    color: #f5f5f5;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+/* FOOTER BEGIN */
+footer .content {
+    flex-grow: 1;
+    /*
+    font-style: italic;
+    color: #9b9b9b;
+    */
+  }
+  
+  footer p {
+    padding-bottom: 1.66rem;
+  }
+  
+  footer p:last-child {
+    padding-bottom: 0;
+  }
+  
+  footer .author {
+    COLOR: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  footer em {
+    /*color: #cfcfcf;*/
+    COLOR: rgb(212, 11, 11);
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    footer {
+      flex-direction: column;
+      padding: 0 10% 2rem 10%;
+}
+/* FOOTER END */

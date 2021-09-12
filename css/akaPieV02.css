@@ -1,0 +1,390 @@
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+body {
+    /*
+    background-image: url(../images/Fibonacci.png);
+    background-size:cover;
+    */
+
+    /* rem helps with scaling */
+    padding: 6rem;
+    font-family: "Roboto", sans-serif;
+    background: rgba(2, 6, 223, 0.85);
+}
+
+/* To vertically align text next to image */
+p {
+    display: inline;
+}
+
+/* Animates text begin*/
+h1 {
+    position: absolute;
+    top: 20px;
+    /* Aligns AmerKorAsian at top of page */
+    left: 33%;
+    text-align: center;
+
+
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    background-size: 400%;
+    font-size: 70px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    word-spacing: 5px;
+
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+/* Animates text end*/
+
+/* puts menu list in a row begin */
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    font-family: Arial;
+    color: black;
+    font-size: 14px;
+    padding: 0 4px;
+    text-decoration: none;
+}
+
+/* To make the list a dropdown, change display to none.*/
+nav ul li ul {
+    /*display: block;*/
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/*
+nav ul li li:hover ul {
+    display: block;
+}
+*/
+
+nav ul li ul li {
+    width: 150px;
+    border-radius: 4px;
+}
+
+nav ul li ul li a {
+    padding: 8px 12px;
+}
+
+nav ul li ul li:hover a {
+    display: block;
+}
+
+/* puts menu list in a row end */
+
+/* color for MENU and CONTACT begin */
+a.whitemenu {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.whitemenu:hover {
+    background: lightblue;
+    transform: translateZ(10px);
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 0px 0px;
+}
+
+a.yellowmenu {
+    color: yellow;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.yellowmenu:hover {
+    background: lightblue;
+    transform: translateZ(20px);
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 0px 0px;
+}
+/* color for MENU and CONTACT end */
+
+
+
+
+/*PIE ACCORDIAN BEGIN*/
+.title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  hr {
+    /* based on the font-size of 16px, margin of 1rem = 16px */
+    margin: 1rem 0;
+  }
+  
+  details {
+    /* for a little bit of padding on the left and right sides */
+    padding: 0 1rem;
+  }
+  
+  /* > means any children that is a summary of the details, we are going to add these styles to */
+  details > summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  
+  details > summary 'akaFund'::after {
+    content: url(../Dev Projects/resources/images/pie5AKAFund.png);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    transition: transform 0.3s ease;
+  }
+  
+  details [open] > summary::after {
+    transform: rotate(90deg);
+  }
+  
+  /* The below code only matters for people using Chrome browser to remove any styling with text */
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .details-content {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+  
+  .details-content > p {
+    margin: 1rem 0;
+  }
+/*PIE ACCORDIAN END*/
+
+.pie-section {
+    padding: 20px 50px;
+}
+
+/* Below code is to remove any marks before or after list */
+#pies ul {
+    color:blue;
+    list-style-type: none;
+}
+
+hr {
+    /* based on the font-size of 16px, margin of 1rem = 16px */
+    margin: 1rem 0;
+  }
+  
+  details {
+    /* for a little bit of padding on the left and right sides */
+    padding: 0 1rem;
+  }
+
+  /* > means any children that is a summary of the details, we are going to add these styles to */
+  
+  details > summary {
+    list-style-type: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+/*
+  details > summary::after {
+    content: url(../images/arrowhead.jpg);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    transition: transform 0.3s ease;
+  }
+  
+  details [open] > summary::after {
+    transform: rotate(90deg);
+  }
+  */
+  
+  /* The below code only matters for people using Chrome browser to remove any styling with text */
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  /* code for spacing of 'Pie Options summary' */
+  .details-content {
+    font-size: 1rem;
+    /* 0.5 = top/bottom, 1 = left/right sides */
+    padding: 0.5rem 1rem;
+  }
+  
+  .details-content > p {
+    margin: 0.1rem 0;
+  }
+
+
+g {
+    color: limegreen;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+r {
+    color: red;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+w {
+    color: #f5f5f5;
+    font-size: 1rem;
+}
+
+y {
+    color: yellow;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a.white {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a.small {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a.yellow {
+    color: yellow;
+    font-size: 20px;
+}
+
+a.blue {
+    color: blue;
+    font-size: 20px;
+}
+
+/* Below code is to remove any marks before or after list */
+#pies ul {
+    color:blue;
+    list-style-type: none;
+}
+
+.avatar1 {
+    background-image: url(../images/pie5AKAFund.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /*border: 1px solid black;*/
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar2 {
+    background-image: url(../images/pie1Dividend1.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /*border-radius: 75%;*/
+    /*border: 1px solid black;*/
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar3 {
+    background-image: url(../images/pie2Dividend2.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /*border: 1px solid black;*/
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar4 {
+    background-image: url(../images/pie3Ten_Equal_INV.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar5 {
+    background-image: url(../images/pie6Popular.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar6 {
+    background-image: url(../images/pie4VanguardFund.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+#aka {
+    color: yellow;
+    font-size: 50px;
+    
+}
+
+.bold {
+    font-weight: 400;
+
+}
+
+

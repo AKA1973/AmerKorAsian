@@ -1,0 +1,467 @@
+/* below code is to get rid of extra margin and padding that might exist. */
+/* The below code resets the box model to border-box for all HTML elements. */
+/* This new box model avoids the dimensional issues that exist in the former box model you learned about. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* email section begin */
+body {
+    font-family: sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    /*
+    background-color: aliceblue;
+    */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(12, 128, 128, 0.199);
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color: rgba(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 3s ease background-color;
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(214, 226, 236);
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: red;
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/* email section end */
+
+/* The below code animates text begin*/
+h1 {
+    position: absolute;
+    /*top: 50%;*/
+    left: 32%;
+    text-align: center;
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    background-size: 400%;
+    font-size: 70px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    word-spacing: 5px;
+
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+/* The below code animates text end*/
+
+.navbar {
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+
+    /*background: transparent;*/
+    /* Below code is to make sure image, item always stays on page */
+    position: fixed;
+    /* Item is at top of webpage 0px */
+    top: 50px;
+    /* below code is to make sure item covers entire webpage */
+    width: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.navbar3 {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar li {
+    /* below is the details for how the top navbar should look and function */
+    display: inline-block;
+    /* below code is where on top navbar items are located 10px 50px */
+    padding: 5px 50px ;
+
+}
+
+/* Navbar Contact Section Right - bar2 and bar2 ul */
+.bar2 {
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    top: 100px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.bar2 ul {
+    list-style: none;
+    float: right;
+    display: inline-block;
+    padding: 5px 50px ;
+}
+
+.bar2 div {
+    list-style: none;
+    float: right;
+    left: -235px;
+    display: inline-block;
+    padding: 5px 50px ;
+}
+
+a.white {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a.small {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a.yellow {
+    color: yellow;
+    font-size: 15px;
+}
+
+/* color for contact icon */
+a.yellow2 {
+    color: yellow;
+    font-size: 20px;
+}
+
+a.blue {
+    color: blue;
+    font-size: 20px;
+}
+
+.banner {
+    /* the below code is to change the color of background to match image*/
+    /*background-color:rgb(240, 32, 222);*/
+    /*background-image: url('../images/Fibonacci_blue.png');*/
+    /*background-image: url('../images/Fib_Spiral_blue.png');*/
+    color: white;
+    font-weight: 800;
+    font-size: 35px;
+    /*centers the image*/
+    /*margin: 0 auto;*/
+    text-align: center;
+    /* shadowing added to top and bottom 100px, but not to left or right 0px*/
+    padding: 50px 0;
+
+    /*position: absolute;*/
+    top: 50%;
+    /*left: 20%;*/
+    text-align: center;
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    /*background-size: 400%;
+    font-size: 70px;*/
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 30s linear infinite;
+}
+
+/* The below 30 lines of code is to animate text*/
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(3, 2, 38);
+}
+
+h1 {
+    position: absolute;
+    /*top: 50%;*/
+    left: 32%;
+    text-align: center;
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    background-size: 400%;
+    font-size: 70px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    word-spacing: 5px;
+
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+#motto {
+    color:yellow;
+    font-size: 35px;
+    text-align: center;
+
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #aeaff0, #0033ff, #283ae0, #8994f5);
+    background-size: 400%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+#change-logo-size {
+    height: 650px;
+    width: 650px;
+    top: 80%;
+    /* adds a shadow to the image*/
+    /*filter: drop-shadow(2px 2px 2px white);*/
+
+}
+
+nav p {
+    font-family: Arial;
+    color: #222;
+    font-size: 24px;
+    line-height: 55px;
+    float: left;
+    padding: 0px 20px;
+}
+
+nav ul {
+    float: left;
+}
+
+/* puts menu list in a row*/
+nav ul li {
+    float: right;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    font-family: Arial;
+    color: #222;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    /*display: block;*/
+    /* To make the list a dropdown, change display to none.*/
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 150px;
+    border-radius: 4px;
+}
+
+nav ul li ul li a {
+    padding: 8px 12px;
+
+}
+
+nav ul li a ul li a:hover {
+    background-color: green;
+    /* code to make background transparent */
+    background: rgba(0, 0, 0, 0, .7);
+}
+
+#pies ul {
+    color:white;
+    list-style-type: none;
+}
+
+#aka {
+    color: orange;
+    font-size: 25px;
+    
+}
+
+.bold {
+    font-weight: 400;
+
+}
+
+/* The below code goes along with the <div> section on html page to slide images across the screen */
+@keyframes slide {
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left: -200%;
+    }
+    60%{
+        left: -300%;
+    }
+    70%{
+        left: -300%;
+    }
+    80%{
+        left: -400%;
+    }
+    90%{
+        left: -400%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+#slider {
+    overflow: hidden;
+
+}
+
+#slider figure img {
+    float: left;
+    /* divide 100% by the number of images to get the percent to put here */
+    width: 20%;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    animation: slide 10s infinite;
+}

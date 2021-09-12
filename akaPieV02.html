@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKA Pie V02</title>
+    <link rel="stylesheet" href="./resources/css/akaPieV02.css">
+    <style>
+        .maindiv{
+            width: 40%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            transform: translate(-50%, -50%);
+            background-image: url('./resources/images/ryanPieCurrent.png');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: slider 15s infinite linear;
+        }
+
+        @keyframes slider{
+            0%{background-image: url('./resources/images/ryanPieCurrent.png'); background-size: 100% 100%; }
+            40%{background-image: url('./resources/images/annualizedReturn.png'); background-size: 100% 100%; }
+            80%{background-image: url('./resources/images/marketsVSpies.png'); background-size: 100% 100%; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <ul>
+        <br>
+            <li><a class="whitemenu" href="#"a>Menu</a>
+                <ul>
+                    <li><a href="../Dev Projects/akaBackgroundChange.html">Homepage</a></li>
+                    <li><a href="../Dev Projects/akaLogin.html" >Login / Register</a></li>
+                    <li><a href="../Dev Projects/akaProfile.html">Profile</a></li>
+                    <li><a href="../Dev Projects/akaAboutUs.html" >About Us</a></li>
+                    <!-- Below link opens in new tab 
+                    <li><a href="../Dev Projects/akaDocuments.html" target=" _blank"a>Documents Library</a></li>
+                    -->
+                    <li><a href="../Dev Projects/akaDocuments.html" >Documents Library</a></li>
+                    <li><a href="../Dev Projects/aka1210909Referrals.html" >Referrals</a></li>
+                    <li><a href="../Dev Projects/black2ColorPic.html" >Pictures</a></li>
+                </ul>
+            </li>
+            <li><a class="yellowmenu" href="../Dev Projects/akaEMAIL.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Banner Section-->
+    <!-- below class code needed to link to css file -->
+    <div class="banner">
+        <br>
+        <br>
+        <h1>AmerKorAsian Pie Options</h1>
+        <br>
+        <br>
+    </div>
+
+
+    <div class="maindiv">
+
+    </div>
+
+    <script type="text/javascript">
+        let image = document.getElementById('image');
+        setInterval(function(){
+            let random = Math.floor(Math.random() * 4);
+            image.src = images[random];
+        }, 800);
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="details-content">
+      <p><w>
+          AmerKorAsian invests based on a long-term horizon and focuses on the
+          company’s fundamentals. No investment advice is neither given or asked
+          by AmerKorAsian. All investment decisions are made solely by
+          AmerKorAsian without regard to outside factors. If you decide to
+          invest with AmerKorAsian, you agree and understand that no investment
+          advice was offered to you by AmerKorAsian about what pie or other
+          investments AmerKorAsian offers.
+      </w></p>
+    </div>
+
+    <div class="avatar1"></div>
+    <details>
+      <summary><w>AKA FUND</w> <g>(LOW RISK)</g></summary>
+      <div class="details-content">
+          <p><w>
+              COVID-19 was the reason I started this pie. People needing to invest
+              for retirement and think about the future doesn't stop because the
+              world is hit with a pandemic. So this pie will adjust based on major
+              economic events that effect us globally.
+          </w></p>
+      </div>
+    </details>
+    <br>
+
+    <div class="avatar2"></div>
+    <details>
+      <summary><w>DIVIDEND #1</w> <g>(LOW RISK)</g></summary>
+      <div class="details-content">
+          <p><y>(For people who want to invest in companies that pay dividends)</y></p>
+          <br>
+          <w>Fund holds securities in the following industries:</w>
+          <p><w>1) Capital Goods</w></p>
+          <p><w>2) Consumer Non-Durables</w></p>
+          <p><w>3) Consumer Services</w></p>
+          <p><w>4) Public Utilities</w></p>
+          <br>
+          <p><y>YIELD BETWEEN 3%-5%</y></p>
+      </div>
+    </details>
+    <br>
+
+    <div class="avatar3"></div>
+    <details>
+      <summary><w>DIVIDEND #2</w> <g>(LOW RISK)</g></summary>
+      <div class="details-content">
+          <p><y>(For people who want to invest in companies that pay dividends)</y></p>
+          <br>
+          <w>Fund holds securities in the following industries:</w>
+          <p><w>1) Energy</w></p>
+          <p><w>2) Finance</w></p>
+          <p><w>3) Healthcare</w></p>
+          <p><w>4) Technology</w></p>
+          <br>
+          <p><y>YIELD BETWEEN 3%-5%</y></p>
+      </div>
+    </details>
+    <br>
+
+    <div class="avatar4"></div>
+    <details>
+      <summary><w>EQUALLY INVESTED</w> <r>(HIGH RISK)</r></summary>
+      <div class="details-content">
+        <p>
+          <p><y>This fund holds 10 investments that are equally weighted.</y></p>
+          <br>
+          <p><w>
+              If 2 or more funds are different from the core holdings by 5% or
+              more, the pie will be rebalanced to get the securities weighted
+              evenly.
+          </w></p>
+          <br>
+      </div>
+    </details>
+    <br>
+
+    <div class="avatar5"></div>
+    <details>
+      <summary><w>POPULAR STOCKS</w> <r>(HIGH RISK)</r></summary>
+      <div class="details-content">
+        <p><w>
+          * This Pie was not available for investing until May 2021. But I
+          wanted to be fully transparent in the actual results of this pie
+          This fund holds stocks that are popular with investors. Because
+          investor sentiment changes quickly, this pie will be more actively
+          managed than the other pies and positions will change more
+          frequently. For this reason, this pie will require an initial
+          investment of $100 and is only suitable for people with a high
+          tolerance for risk as this pie will change in larger amounts more
+          often than the other pies available
+        </w></p>
+        <br>
+        <p><w>
+          This pie is not suitable for all investors and only should be
+          considered for individuals who are interested in more risky
+          investments.
+          </w></p>
+        <br>
+        <p><w>
+          * The current rules for this pie will be updated as needed to make
+          sure wise-investment choices are being made.
+        </w></p>
+      </div>
+    </details>
+    <br>
+
+    <div class="avatar6"></div>
+    <details>
+      <summary><w>VANGUARD FUND</w> <y>(MEDIUM RISK)</y></summary>
+      <div class="details-content">
+        <p><w>
+          This pie is the main reason why I wanted to help others make money
+          in the stock market. The fund is made up of my first portfolio that
+          was at Vanguard.
+      </w></p>
+      </div>
+    </details>
+  </details>
+
+</body>
+</html>
