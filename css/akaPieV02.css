@@ -387,4 +387,38 @@ a.blue {
 
 }
 
-
+/* FOOTER BEGIN */
+footer .content {
+    flex-grow: 1;
+    /*
+    font-style: italic;
+    color: #9b9b9b;
+    */
+  }
+  
+  footer p {
+    padding-bottom: 1.66rem;
+  }
+  
+  footer p:last-child {
+    padding-bottom: 0;
+  }
+  
+  footer .author {
+    COLOR: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  footer em {
+    /*color: #cfcfcf;*/
+    COLOR: rgb(212, 11, 11);
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    footer {
+      flex-direction: column;
+      padding: 0 10% 2rem 10%;
+}
+/* FOOTER END */
