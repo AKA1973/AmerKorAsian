@@ -54,28 +54,15 @@ h2 {
     animation: animate 20s linear infinite;
 }
 
-/*
-@keyframes animate {
-    0% {
-        background-position: 0%;
-    }
-    100% {
-        background-position: 400%;
-    }
-}
-*/
-/* Animates text end*/
-
-/* Animates text begin*/
 h2 span {
     position: relative;
     text-align: center;
 
 
     background: linear-gradient(90deg, #e6e929, #0033ff, #283ae0, #f7f332, #5144ff, #0413eed7);
+    font-family: serif;
     background-size: 400%;
     font-size: 8rem;
-    font-family: serif;
     letter-spacing: 0.33rem;
     font-weight: 1000; /* font-weight of 700 = bold */
     word-spacing: 0.33rem;
@@ -102,14 +89,12 @@ h2 span {
 }
 /* Animates text end*/
 
+
 .content{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*
-    text-transform: uppercase;
-    */
 }
 
 .content h1{
