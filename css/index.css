@@ -33,13 +33,13 @@ h2 {
     position: relative;
     text-align: center;
 
-
     background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
-    background-size: 400%;
+    background-size: 300%;
     font-size: 3rem;
     font-family: monospace;
     letter-spacing: 0.33rem;
-    font-weight: bold 900;
+    /*font-weight: bold 900;*/
+    font-weight: 900;
     word-spacing: 0.33rem;
 
     /* Below code width will not shrink below 300px, width exceed 600px, */
@@ -57,7 +57,6 @@ h2 {
 h2 span {
     position: relative;
     text-align: center;
-
 
     background: linear-gradient(90deg, #e6e929, #0033ff, #283ae0, #f7f332, #5144ff, #0413eed7);
     font-family: serif;
