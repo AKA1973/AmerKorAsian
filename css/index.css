@@ -36,7 +36,7 @@ h2 {
 
     background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
     background-size: 400%;
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: monospace;
     letter-spacing: 0.33rem;
     font-weight: bold 900;
@@ -61,7 +61,7 @@ h2 span {
 
     background: linear-gradient(90deg, #e6e929, #0033ff, #283ae0, #f7f332, #5144ff, #0413eed7);
     font-family: serif;
-    background-size: 400%;
+    background-size: 300%;
     font-size: 6rem;
     letter-spacing: 0.33rem;
     font-weight: 1000; /* font-weight of 700 = bold */
