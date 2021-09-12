@@ -66,13 +66,6 @@ h2 span {
     font-weight: 1000; /* font-weight of 700 = bold */
     word-spacing: 0.33rem;
 
-    /* Below code width will not shrink below 300px, width exceed 600px, */
-    /* Below code height will not shrink below 150px, width exceed 300px, */
-    min-width: 300px;
-    max-width: 600px;
-    min-height: 150px;
-    max-height: 300px;
-
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 10s linear infinite;
