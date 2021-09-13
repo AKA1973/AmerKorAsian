@@ -1,0 +1,211 @@
+/* below code is to get rid of extra margin and padding that might exist. */
+/* The below code resets the box model to border-box for all HTML elements. */
+/* This new box model avoids the dimensional issues that exist in the former box model you learned about. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Bakground color of webpage BEGIN */
+body{
+    /*
+    background: rgba(2, 6, 223, 0.85);
+    */
+    background: rgb(136, 208, 236); /*sky-blue*/
+}
+/* Bakground color of webpage END */
+
+
+/* MENU SECTION BEGIN */
+nav {
+    position: fixed;
+    width: 100%;
+    height: 4.5rem;
+    background-color: rgb(6, 6, 253);
+}
+
+nav p a {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(250, 250, 68);
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.20rem;
+    float: left;
+    padding: 1rem 1rem;
+    text-decoration: none;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.50rem;
+    color: #fff;
+    padding: 1.8rem 1rem;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.911);
+    padding: 0.5rem;
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* To create a hover effect within the list items. */
+nav ul li:hover ul {
+    display: block;
+ }
+
+/* Below code adjusts the width of the dropdown menu so items can be on one line. */
+nav ul li ul li {
+    width: 20rem;
+    border-radius: 4px;
+}
+
+nav ul li ul li a {
+    padding: 0.5rem 4rem;
+}
+
+nav ul li ul li a:hover {
+    padding: 0.5rem 4rem;
+    background-color: #5c8fff;
+    border-radius: 4px 4px 4px 4px;
+}
+/* MENU SECTION END */
+
+
+/* CONTACT SECTION BEGIN */
+.alignright a{
+	float: right;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(250, 250, 68);
+    font-size: 1.50rem;
+    line-height: 2rem;
+    font-weight: bold;
+    padding: 1.5rem 1rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* CONTACT SECTION END */
+
+
+
+
+
+
+
+
+
+
+/* code for Fibonacci Spiral BEGIN */
+#change-logo-size {
+    /*
+    height: 650px;
+    width: 650px;
+    top: 80%;
+    */
+    height: 37.5rem;
+    width: 37.5rem;
+    display: block;
+    
+    margin: 0 auto;
+    align-items: center;
+    
+    /* adds a shadow to the image*/
+    /*filter: drop-shadow(2px 2px 2px white);*/
+}
+/* code for Fibonacci Spiral END */
+
+
+
+
+/* FOOTER BEGIN */
+b {
+    color: rgb(12, 12, 12);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+r {
+    color: red;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a.redmenu {
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.redmenu:hover {
+    background: lightblue;
+    transform: translateZ(20px);
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 0px 0px;
+}
+
+w {
+    color: #f5f5f5;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+footer .content {
+    flex-grow: 1;
+    /*
+    font-style: italic;
+    color: #9b9b9b;
+    */
+  }
+  
+  footer p {
+    padding-bottom: 1.66rem;
+  }
+  
+  footer p:last-child {
+    padding-bottom: 0;
+  }
+  
+  footer .author {
+    COLOR: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  footer em {
+    /*color: #cfcfcf;*/
+    COLOR: rgb(212, 11, 11);
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    footer {
+      flex-direction: column;
+      padding: 0 10% 2rem 10%;
+}
+/* FOOTER END */
+
+
+
+
