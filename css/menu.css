@@ -22,19 +22,19 @@ body{
 nav {
     position: fixed;
     width: 100%;
-    height: 4.5rem;
+    height: 4.0rem;
     background-color: rgb(6, 6, 253);
 }
 
 nav p a {
     font-family: 'Times New Roman', Times, serif;
     color: rgb(250, 250, 68);
-    font-size: 3rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.75rem;
     font-weight: bold;
-    letter-spacing: 0.20rem;
+    letter-spacing: 0.10rem;
     float: left;
-    padding: 1rem 1rem;
+    padding: 1rem 0.5rem;
     text-decoration: none;
 }
 
@@ -51,9 +51,9 @@ nav ul li {
 nav ul li a {
     display: block;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.50rem;
+    font-size: 1rem;
     color: #fff;
-    padding: 1.8rem 1rem;
+    padding: 1.6rem 0.75rem;
     text-decoration: none;
 }
 
@@ -94,10 +94,10 @@ nav ul li ul li a:hover {
     display: block;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(250, 250, 68);
-    font-size: 1.50rem;
+    font-size: 1rem;
     line-height: 2rem;
     font-weight: bold;
-    padding: 1.5rem 1rem;
+    padding: 1.1rem 0.50rem;
     text-decoration: none;
     list-style-type: none;
 }
