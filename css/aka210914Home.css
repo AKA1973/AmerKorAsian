@@ -1,0 +1,499 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background: transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+/* Base Font of a browser is 16 px, so 1em = 16px */
+/* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
+
+/* Beginning of my code */
+/* Code in the 'asterisk' section applies to everything in code */
+* {
+    text-decoration: none;
+}
+body {
+    /*
+    background: rgb(136, 208, 236);*/ /*sky-blue*/
+    background: rgb(37, 77, 187);
+}
+
+
+
+
+
+
+
+/* HEADER SECTION BEGIN */
+header {
+    /* Details for header background color */
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+header .header-brand {
+    /* Details for AKA logo */
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(37, 77, 187);
+    /*
+    text-shadow: 2px 2px #111;
+    */
+    text-transform: uppercase;
+    display: block;
+    /* centers the header */
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    /* Centers the navigation links on page. */
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    /* Removes Bullet-Points */
+    list-style: none;
+    /* Spacing between menu items on header. */
+    padding: 0px 10px 0px 10px;
+}
+
+/* Navigation Link section Begin */
+header nav ul li a {
+    font-family: serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(37, 77, 187);
+    /* Below code will make the header text all uppercase on all devices. */
+    text-transform: uppercase;
+}
+/* Navigation Link section End */
+
+header .header-cases {
+    display: none;
+}
+
+
+
+
+/* Instructions for the width and changing the content inside the website for a desktop version of the website  */
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        /* The below items need to change to make the website correctly display on a desktop */
+        /*to correctly center the header on the left side within the border, need to subtract line-height from 100px and divide by 2 (100-40) = 60 / 2 = 30 */
+        margin: 30px 0;
+        text-align: left;
+        line-height: 40px;
+        padding: 0px 15px 0px 15px;
+        /* Need both lines of code to correctly display the solid border line separating name and menu items. */
+        border-right: 2px solid #111;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 20px 0px 0px 20px;
+        float: left;
+    }
+    
+    /* Navigation Link section Begin */
+    header nav ul li a {
+        line-height: 60px;
+    }
+    /* Navigation Link section End */
+
+    /* CODE TO PUT HEADER ITEM ON RIGHT SIDE BEGIN */
+    header .header-cases {
+        display: block;
+        font-family: serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(255, 255, 2);
+        text-shadow: 2px 2px #111;
+        text-transform: uppercase;
+        line-height: 60px;
+        /* If I want a border around the word 'contact', use below line of code */
+        /*
+        border: 1px solid #111;
+        */
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    /* CODE TO PUT HEADER ITEM ON RIGHT SIDE END */
+}
+
+/* HEADER SECTION END */
+
+
+
+
+
+
+
+
+
+/*  INDEX SECTION BEGIN  */
+/* logo-banner SECTION BEGIN */
+.logo-banner {
+    width: 100%;
+    /* 100% of view height of device
+    height: 100vh;*/
+    /* Code takes total height view and subtracts an amount, similar to padding, so image doesn't stretch to bottom of page. */
+    height: calc(100vh - 100px);
+    /*
+    background-image: url(../images/paidFibonacci/vectorstock_23276099.jpg);
+    */
+    background-image: url('../images/paidFibonacci/fibBlueFinal3.png');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table; /* code also part of vertical-center section below */
+}
+
+/* Code to make sure that the text alignment is correct on any device BEGIN */
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+/* Code to make sure that the text alignment is correct on any device END */
+
+
+.logo-banner h1 {
+    font-family: serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: rgb(255, 255, 0);;
+    text-align: center;
+    text-shadow: 2px 2px #111;
+
+    /* 8px piece gives the text a blurry look
+    text-shadow: 2px 2px 8px rgb(248, 252, 2); */
+
+
+    /*
+    vertical-align: top;
+    */
+}
+
+
+
+
+
+/* Code to make sure that the text alignment is correct on any device BEGIN */
+
+/* Trying to figure out how to make the text appear on the top and bottom of image with below code information. */
+
+/*
+.vertical-bottom {
+    display: table-cell;
+    vertical-align: bottom;
+}
+*/
+
+/* Code to make sure that the text alignment is correct on any device END */
+
+
+
+
+
+
+
+.logo-banner h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    /* line-height only needed if spacing isn't good between text lines
+    line-height: 15px; */
+    color: rgb(255, 255, 0);
+    text-align: center;
+    text-shadow: 2px 2px #111;
+    /* 8px piece gives the text a blurry look
+    text-shadow: 2px 2px 8px rgb(248, 252, 2); */
+    /*
+    vertical-align: bottom;
+    */
+}
+
+/*
+.directionBottom {
+    bottom: 20px;
+}
+*/
+/* logo-banner SECTION END */
+
+
+
+
+/* index-links SECTION BEGIN */
+/* To change the look of sections for entire class of items BEGIN */
+.index-links div {
+    margin: 10px 10px 0;
+    width: calc(100% - 20px);
+    height: 100px;
+    background-color: #fff;
+}
+/* To change the look of sections for entire class of items END */
+
+.index-links div h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    /* line-height only needed if spacing isn't good between text lines */
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* index-links SECTION END */
+/*  INDEX SECTION END  */
+
+
+
+
+
+
+
+
+/* HOW THE WEBSITE WOULD LOOK ON A COMPUTER OR LAPTOP SECTION BEGIN */
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    /* Code centers the text below the banner.  Don't need for this, so commenting out whole section, but leaving for future reference */
+    /*
+    .logo-banner {
+    height: 450px;
+    }
+
+    .logo-banner h1 {
+        display: block;
+        width: 560px;
+        margin: 0 auto;
+    }
+    */
+
+    /* CODE TO MAKE THE LINK BOXES SMALLER WHEN VIEWED ON COMPUTER OR LAPTOP */
+    .index-links {
+        overflow: hidden;
+        }
+
+    .index-links div {
+        margin: 10px 5px 0px;
+        height: 220px;
+        background-color: #f2f2f2;
+        float: left;
+    }
+
+    .index-boxlink-square {
+        /* The size of each box */
+        width: calc(25% - 20px) !important; /* The !important; code overrides the sizing in the 'div' section above. */
+    }
+
+    .index-boxlink-rectangle {
+        /* The size of each rectangle */
+        width: calc(50% - 20px) !important;
+    }
+
+    .index-links div h3 {
+        /* line-height centered if matches height amount from .index-links div section for computer / laptop version. */
+        line-height: 220px;
+    }
+}
+/* HOW THE WEBSITE WOULD LOOK ON A COMPUTER OR LAPTOP SECTION END */
+
+
+
+
+
+
+
+
+/* FOOTER BEGIN*/
+/* Footer is the container section */
+footer {
+    width: calc(100% - 0px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    /* Code below will always change the width when new content is added */
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    line-height: 35px;
+}
+
+.footer-links-main {
+    display: none;
+}
+
+/* Code to change icons to fit section BEGIN */
+.footer-sm {
+    width: 50px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* Code to change icons to fit section END */
+
+/* FOOTER END*/
+
+
+/* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION BEGIN */
+@media only screen and (min-width: 1000px) {
+    .footer-links-main {
+        display: block;
+    }
+    
+    /* Code to add spacing between lists sections on bottom of webpage. */
+    footer ul {
+        padding-right: 50px;
+    }
+
+    footer ul li p {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 24px;
+        color: rgb(255, 255, 0);
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+}
+/* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION END */
+
+

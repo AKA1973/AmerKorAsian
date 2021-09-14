@@ -1,0 +1,102 @@
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+/* Base Font of a browser is 16 px, so 1em = 16px */
+/* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
+
+.wrapper {
+    width: 100%;
+}
+
+/* Code so banner doesn't appear in cellphone view */
+.img-banner {
+    display: none;
+}
+
+.img-info {
+    width: 100%;
+}
+
+.img-info h2 {
+    padding: 30px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #111;
+    line-height: 44px;
+}
+
+.img-info p {
+    padding: 0px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #111;
+    line-height: 24px;
+}
+
+/* Code below is to change what text appears next to the image */
+.img-me {
+    width: 100%;
+}
+
+/* Only run the information between the curly brackets if the information afterwards is true. */
+/* Tablet specs BEGIN */
+@media only screen and (min-width: 768px) {
+    .img-banner {
+        display: block;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .img-info h2 {
+        padding: 20px 0px 0px;
+    }
+    
+    .img-info p {
+        padding: 20px 0px 0px;
+    }
+
+    img-me {
+        padding-top: 30px;
+    }
+/* Tablet specs END */
+
+/* Computer specs BEGIN */
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+    }
+
+    .img-info {
+        width: 50%;
+        float: right;
+    }
+    
+    .img-info h2 {
+        padding: 20px 0px 0px 30px;
+    }
+    
+    .img-info p {
+        padding: 20px 0px 0px 30px;
+    }
+
+    img-me {
+        padding-top: 0px;
+        width: 50%;
+        float: left;
+    }
+}
+/* Computer specs END */
+
+
+
+
