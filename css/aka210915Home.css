@@ -403,7 +403,7 @@ header ul li ul li a:hover {
     margin: 0 auto;
 
 
-    background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #081477, #fefe33, #d6d5a4);
+    background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1a2055, #fefe33, #d6d5a4);
     background-size: 400%;
     font-size: 4.5rem;
     font-family: sans-serif;
@@ -442,7 +442,7 @@ header ul li ul li a:hover {
     /*
     background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
     */
-    background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #081477, #fefe33, #d6d5a4);
+    background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1a2055, #fefe33, #d6d5a4);
     background-size: 400%;
     font-size: 30px;
     font-family: sans-serif;
