@@ -1,0 +1,64 @@
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+
+
+/* Animates text begin*/
+h2 {
+    position: relative;
+    text-align: center;
+
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    background-size: 300%;
+    font-size: 3rem;
+    font-family: monospace;
+    letter-spacing: 0.33rem;
+    /*font-weight: bold 900;*/
+    font-weight: 900;
+    word-spacing: 0.33rem;
+
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+h2 span {
+    position: relative;
+    text-align: center;
+
+    background: linear-gradient(90deg, #e6e929, #0033ff, #283ae0, #f7f332, #5144ff, #0413eed7);
+    font-family: serif;
+    background-size: 300%;
+    font-size: 6rem;
+    letter-spacing: 0.33rem;
+    font-weight: 1000; /* font-weight of 700 = bold */
+    word-spacing: 0.33rem;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+/* Animates text end*/
+
+

@@ -133,6 +133,7 @@ body {
 header {
     /* Details for header background color */
     position: fixed;
+    z-index: 1;
     /*
     background-color: #fff;
     */
@@ -154,22 +155,42 @@ header .header-brand {
     text-shadow: 2px 2px #111;
     */
     text-transform: uppercase;
+    /* below 2 lines of code centers the header */
     display: block;
-    /* centers the header */
     margin: 0 auto;
     text-align: center;
     padding: 10px 0px;
 }
 
-header nav ul {
+/* This line of code is if i want to include another section with a link.  Can remove if not needed.  See HTML 'About Us' section. */
+header .header-cases {
+    display: none;
+}
+
+header ul {
     display: block;
     margin: 0 auto;
     /* Centers the navigation links on page. */
     width: fit-content;
 }
 
-header nav ul li {
+header ul li {
+
+
+
+
+    /*
     display: inline-block;
+    */
+
+
+    position: relative;
+
+
+
+
+    
+    
     float: left;
     /* Removes Bullet-Points */
     list-style: none;
@@ -178,7 +199,15 @@ header nav ul li {
 }
 
 /* Navigation Link section Begin */
-header nav ul li a {
+header ul li a {
+
+
+    display: block;
+    text-decoration: none;
+
+
+
+
     font-family: serif;
     font-size: 20px;
     font-weight: bold;
@@ -188,9 +217,49 @@ header nav ul li a {
 }
 /* Navigation Link section End */
 
-header .header-cases {
+
+
+
+/* To make the list a dropdown, change display to none.*/
+header ul li ul {
+    /*display: block;*/
     display: none;
+    position: absolute;
+    background-color: #000;
+    padding: 10px;
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 4px 4px;
 }
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 150px;
+    border-radius: 4px;
+}
+
+header ul li ul li a {
+    padding: 8px 12px;
+}
+
+header ul li ul li a:hover a {
+    display: block;
+}
+
+header ul li ul li a:hover {
+    background-color: rgb(32.93, 71.31, 152.52);
+    /* code to make background transparent */
+    background: rgba(0, 0, 0, 0, .7);
+}
+/* puts menu list in a row end */
+/* HEADER SECTION END */
+
+
+
+
+
 
 
 
@@ -285,7 +354,10 @@ header .header-cases {
     font-weight: 900;
     color: rgb(255, 255, 0);;
     text-align: center;
+
+    /*
     text-shadow: 2px 2px #111;
+    */
 
     /* 8px piece gives the text a blurry look
     text-shadow: 2px 2px 8px rgb(248, 252, 2); */
@@ -312,6 +384,97 @@ header .header-cases {
 */
 
 /* Code to make sure that the text alignment is correct on any device END */
+
+
+
+
+
+
+
+/* Animates text begin*/
+.logo-banner h1 {
+    position: relative;
+    /* Aligns AmerKorAsian at top of page */
+    /*
+    top: 1.5rem;
+    left: 33%;
+    */
+    text-align: center;
+    margin: 0 auto;
+
+
+    background: linear-gradient(90deg, #080080, #0413eed7, #fbff00, #0033ff, #030a46, #f5f126);
+    background-size: 400%;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    letter-spacing: 0.40rem;
+    font-weight: 600;
+    /*
+    word-spacing: 1.70rem;
+    */
+
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+/* Animates text end*/
+
+/* code for MOTTO BEGIN */
+#motto {
+    font-size: 30px;
+    text-align: center;
+    /*
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    */
+    background: linear-gradient(90deg, #161a0b, #080808, #dadd0e, #3a3a33, #0c0c01, #f7f332);
+    background-size: 400%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+/* code for MOTTO END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -430,150 +593,76 @@ header .header-cases {
 
 
 
-/* CLOCKS BEGIN */
-/* NEW YORK AND CHICAGO CLOCKS */
-.iframe-container {
-    position: relative;
-    justify-content: right;
-    /* PUTS ALL IMAGES IN A COLUMN
-    flex-direction: column;
-    */
-    text-align: right;
-    width: 100%;
-    padding: 0rem 1.25rem;
+
+/* FOOTER BEGIN*/
+/* Footer is the container section */
+footer {
+    width: calc(100% - 0px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
 }
 
-/* LONDON AND SEOUL CLOCKS */
-.iframe-container2 {
-    position: relative;
-    justify-content: right;
-    text-align: right;
-    width: 100%;
-    padding: 0rem 1.25rem;
+footer ul {
+    /* Code below will always change the width when new content is added */
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
 }
 
-#textPlace {
-position:relative;
-text-align: right;
-color: yellow;
-font-weight: bold;
-justify-content: center;
-
-}
-/* CLOCKS END */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Text color for website disclaimer on bottom of webpage begin */
-a.small {
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-/* Text color for documents link on bottom of webpage */
-a.red {
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
-    list-style: none;
-    /* Removes the line under linked word(s) */
-    text-decoration: none;
+footer ul li {
+    display: block;
     list-style: none;
 }
 
-b {
-    color: rgb(12, 12, 12);
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    list-style-type: none;
+footer ul li a {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    line-height: 35px;
 }
 
-r {
-    color: red;
-    font-size: 1.15rem;
-    font-weight: bold;
-    text-decoration: none;
-    list-style-type: none;
+.footer-links-main {
+    display: none;
 }
 
-a.redmenu {
-    color: red;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
+/* Code to change icons to fit section BEGIN */
+.footer-sm {
+    width: 50px;
+    float: right;
 }
 
-a.redmenu:hover {
-    background: lightblue;
-    transform: translateZ(20px);
-    /* below code is to round the edges, first 2 are the top left and right*/
-    border-radius: 0px 0px 0px 0px;
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
 }
+/* Code to change icons to fit section END */
 
-w {
-    color: #f5f5f5;
-    font-size: 1rem;
-    list-style-type: none;
-}
+/* FOOTER END*/
 
-/* FOOTER BEGIN */
-footer .content {
-    flex-grow: 1;
-    /*
-    font-style: italic;
-    color: #9b9b9b;
-    */
-  }
-  
-  footer p {
-    padding-bottom: 1.66rem;
-  }
-  
-  footer p:last-child {
-    padding-bottom: 0;
-  }
-  
-  footer .author {
-    COLOR: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  footer em {
-    /*color: #cfcfcf;*/
-    COLOR: rgb(212, 11, 11);
-    font-weight: bold;
-  }
-  
-  @media only screen and (max-width: 750px) {
-    footer {
-      flex-direction: column;
-      padding: 0 10% 2rem 10%;
+
+/* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION BEGIN */
+@media only screen and (min-width: 1000px) {
+    .footer-links-main {
+        display: block;
+    }
+    
+    /* Code to add spacing between lists sections on bottom of webpage. */
+    footer ul {
+        padding-right: 50px;
+    }
+
+    footer ul li p {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 24px;
+        color: rgb(255, 255, 0);
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
 }
-/* FOOTER END */
+/* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION END */
+
+
