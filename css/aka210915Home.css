@@ -647,11 +647,13 @@ header ul li ul li a:hover {
         margin: 0 auto;
     }
     /* Code centers the text below the banner.  Don't need for this, so commenting out whole section, but leaving for future reference */
-    /*
+    
     .logo-banner {
-    height: 450px;
+        width: 100%;
+        height: auto;
     }
 
+    /*
     .logo-banner h1 {
         display: block;
         width: 560px;
