@@ -254,6 +254,15 @@ header ul li ul li a:hover {
     background: rgba(0, 0, 0, 0, .7);
 }
 /* MENU LIST in a row END */
+
+/* Customizing LOGIN section BEGIN */
+.redLogin {
+    color: rgb(240, 46, 46);
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Customizing LOGIN section END */
 /* HEADER SECTION END */
 
 
@@ -264,7 +273,7 @@ header ul li ul li a:hover {
 
 
 
-/* MEDIA HEADER SECTION BEGIN */
+/* HEADER SECTION BEGIN */
 /* Instructions for the width and changing the content inside the website for a desktop version of the website  */
 @media only screen and (min-width: 1000px) {
     header .header-brand {
@@ -383,7 +392,16 @@ header ul li ul li a:hover {
     }
     /* MENU LIST in a row END */
 
-    /* Creates hover effect acount 'About Us' link. */
+    /* Customizing LOGIN section BEGIN */
+    .redLogin {
+        color: rgb(240, 46, 46);
+        font-weight: bold;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Customizing LOGIN section END */
+
+    /* Creates hover effect around 'About Us' link. */
     header .header-cases:hover {
         background-color: #fff;
         border-radius: 4px 4px 4px 4px;
@@ -410,7 +428,7 @@ header ul li ul li a:hover {
     }
     /* CODE TO PUT HEADER ITEM ON RIGHT SIDE END */
 }
-/* MEDIA HEADER SECTION END */
+/* HEADER SECTION END */
 
 
 
