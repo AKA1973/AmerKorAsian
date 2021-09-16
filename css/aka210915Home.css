@@ -134,12 +134,9 @@ header {
     /* Details for header background color */
     position: fixed;
     z-index: 1;
-    /*
-    background-color: #fff;
-    */
     background-color: transparent;
     width: 100%;
-    height: 100px;
+    height: 80px;
 }
 
 header .header-brand {
@@ -159,38 +156,26 @@ header .header-brand {
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
-/* This line of code is if i want to include another section with a link.  Can remove if not needed.  See HTML 'About Us' section. */
-header .header-cases {
-    display: none;
-}
-
+/* Navigation Link section BEGIN */
 header ul {
     display: block;
     margin: 0 auto;
-    /* Centers the navigation links on page. */
+    /* Centers the navigation links on page no matter the size website is viewed. */
     width: fit-content;
 }
 
+/* Creates hover effect acount 'AKA' link. */
+header .header-brand:hover {
+    background-color: rgb(136, 208, 236);*/ /*sky-blue*/
+    border-radius: 4px 4px 4px 4px;
+}
+
 header ul li {
-
-
-
-
-    /*
     display: inline-block;
-    */
-
-
     position: relative;
-
-
-
-
-    
-    
     float: left;
     /* Removes Bullet-Points */
     list-style: none;
@@ -198,16 +183,18 @@ header ul li {
     padding: 0px 10px 0px 10px;
 }
 
+/* Creates hover effect acount 'Menu and contact' link. */
+header ul li:hover {
+    background-color: rgb(136, 208, 236);*/ /*sky-blue*/
+    border-radius: 8px 8px 8px 8px;
+}
+
 /* Navigation Link section Begin */
 header ul li a {
-
-
+    /*
     display: block;
+    */
     text-decoration: none;
-
-
-
-
     font-family: serif;
     font-size: 20px;
     font-weight: bold;
@@ -215,34 +202,47 @@ header ul li a {
     /* Below code will make the header text all uppercase on all devices. */
     text-transform: uppercase;
 }
-/* Navigation Link section End */
+/* Navigation Link section END */
+
+/* This line of code will make this section not visible when viewed on smaller devices like mobile phones. */
+header .header-cases {
+    display: none;
+}
 
 
 
 
+/* MENU LIST in a row BEGIN */
 /* To make the list a dropdown, change display to none.*/
 header ul li ul {
     /*display: block;*/
     display: none;
     position: absolute;
     background-color: #000;
-    padding: 10px;
+    padding: 20px 20px;
     /* below code is to round the edges, first 2 are the top left and right*/
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
 }
 
 header ul li:hover ul {
     display: block;
 }
 
+/* This section makes sure the menu items are on one line */
 header ul li ul li {
-    width: 150px;
+    width: 250px;
     border-radius: 4px;
 }
 
+/* List menu items detail BEGIN */
 header ul li ul li a {
-    padding: 8px 12px;
+    display: block;
+    padding: 8px 20px;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
+/* List menu items detail END */
 
 header ul li ul li a:hover a {
     display: block;
@@ -253,7 +253,7 @@ header ul li ul li a:hover {
     /* code to make background transparent */
     background: rgba(0, 0, 0, 0, .7);
 }
-/* puts menu list in a row end */
+/* MENU LIST in a row END */
 /* HEADER SECTION END */
 
 
@@ -264,30 +264,130 @@ header ul li ul li a:hover {
 
 
 
+/* MEDIA HEADER SECTION BEGIN */
 /* Instructions for the width and changing the content inside the website for a desktop version of the website  */
 @media only screen and (min-width: 1000px) {
     header .header-brand {
-        /* The below items need to change to make the website correctly display on a desktop */
+        /* The below items need to change to make the website correctly display on a desktop
+        text-shadow: 2px 2px #111;
+        */
+        
+        text-transform: uppercase;
+        /* below 2 lines of code centers the header */
+        display: block;
         /*to correctly center the header on the left side within the border, need to subtract line-height from 100px and divide by 2 (100-40) = 60 / 2 = 30 */
-        margin: 30px 0;
+        margin: 20px 0;
         text-align: left;
+        /* line-height code is for border line between name and menu items. */
         line-height: 40px;
         padding: 0px 15px 0px 15px;
+
         /* Need both lines of code to correctly display the solid border line separating name and menu items. */
         border-right: 2px solid #111;
         float: left;
     }
 
-    header nav ul {
-        margin: 20px 0px 0px 20px;
+    /* THIS SECTION PLACES THE MENU ITEMS ON THE WEBSITE BEGIN */
+    /* Navigation Link section BEGIN */
+    header ul {
+        /* To center menu items on left side, need to subtract 100px - line-height: 60px from header ul li a section below and then divide by 2 to get 20px to and 20px bottom. */
+        margin: 10px 0 10px 20px;
         float: left;
     }
-    
+
+    /* Creates hover effect acount 'AKA' link. */
+    header .header-brand:hover {
+        background-color: rgb(136, 208, 236);*/ /*sky-blue*/
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    header ul li {
+        display: inline-block;
+        position: relative;
+        float: left;
+        /* Removes Bullet-Points */
+        list-style: none;
+        /* Spacing between menu items on header. */
+        padding: 0px 10px 0px 10px;
+    }
+
+    /* Creates hover effect acount 'Menu and contact' link. */
+    header ul li:hover {
+        background-color: rgb(136, 208, 236);*/ /*sky-blue*/
+        border-radius: 8px 8px 8px 8px;
+    }
+
     /* Navigation Link section Begin */
-    header nav ul li a {
+    header ul li a {
+        /*
+        display: block;
+        */
+        text-decoration: none;
+        font-family: serif;
+        font-size: 20px;
+        color: #fff;
         line-height: 60px;
     }
-    /* Navigation Link section End */
+    /* Navigation Link section END */
+    /* THIS SECTION PLACES THE MENU ITEMS ON THE WEBSITE END */
+
+    
+    /* MENU LIST in a row BEGIN */
+    header ul li {
+        position: relative;
+        float: left;
+        list-style: none;
+        padding: 0px 10px 0px 10px;
+    }
+
+    /* To make the list a dropdown list on a computer.*/
+    header ul li ul {
+        display: none;
+        float: none;
+        position: absolute;
+        margin:0px;
+        background-color: #000;
+        padding: 0px 10px 0px 10px;
+        /* below code is to round the edges, first 2 are the top left and right*/
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    header ul li:hover ul {
+        display: block;
+    }
+
+    /* This section makes sure the menu items are on one line */
+    header ul li ul li {
+        width: 250px;
+        border-radius: 4px;
+    }
+
+    /* List menu items detail BEGIN */
+    header ul li ul li a {
+        display: block;
+        padding: 8px 20px;
+        font-weight: 100;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* List menu items detail END */
+
+    header ul li ul li a:hover a {
+        display: block;
+    }
+
+    header ul li ul li a:hover {
+        background-color: rgb(32.93, 71.31, 152.52);
+        /* code to make background transparent */
+        background: rgba(0, 0, 0, 0, .7);
+    }
+    /* MENU LIST in a row END */
+
+    /* Creates hover effect acount 'About Us' link. */
+    header .header-cases:hover {
+        background-color: #fff;
+        border-radius: 4px 4px 4px 4px;
+    }
 
     /* CODE TO PUT MENU ITEM ON RIGHT SIDE BEGIN */
     header .header-cases {
@@ -310,8 +410,7 @@ header ul li ul li a:hover {
     }
     /* CODE TO PUT HEADER ITEM ON RIGHT SIDE END */
 }
-
-/* HEADER SECTION END */
+/* MEDIA HEADER SECTION END */
 
 
 
@@ -325,6 +424,7 @@ header ul li ul li a:hover {
 /* logo-banner SECTION BEGIN */
 .logo-banner {
     width: 100%;
+    height: auto;
     /* 100% of view height of device
     height: 100vh;*/
     /* Code takes total height view and subtracts an amount, similar to padding, so image doesn't stretch to bottom of page. */
@@ -336,6 +436,7 @@ header ul li ul li a:hover {
     
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     margin: 0 auto;
     display: table; /* code also part of vertical-center section below */
 }
