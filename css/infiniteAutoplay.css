@@ -17,6 +17,8 @@ body {
     position: relative;
     width: 90%;
     display: grid;
+    /* Width auto makes the scrolling bar go across whole webpage. */
+    width: auto;
     place-items: center;
     overflow: hidden;
 }
@@ -61,7 +63,6 @@ img:hover {
 /* GRADIENT SHADOWS BEGIN */
 .slider::before,
 .slider::after {
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     content: '';
     height: 100%;
     position: absolute;
