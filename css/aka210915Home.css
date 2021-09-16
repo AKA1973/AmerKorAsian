@@ -820,7 +820,19 @@ img:hover {
     .index-links {
         overflow: hidden;
         background-color: #fefe33;
-        }
+    }
+    
+    .index-links div {
+        margin: 10px 5px;
+        height: 220px;
+        background-color: #f2f2f2;
+        float: left;
+    }
+
+    .index-boxlink-square {
+        /* The size of each box */
+        width: calc(25% - 20px) !important; /* The !important; code overrides the sizing in the 'div' section above. */
+    }
 }
 
 
