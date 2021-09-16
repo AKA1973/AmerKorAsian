@@ -430,6 +430,7 @@ header ul li ul li a:hover {
 
     width: cover;
     height: cover;
+    background-size: cover;
     /* 100% of view height of device
     height: 100vh;*/
     /* Code takes total height view and subtracts an amount, similar to padding, so image doesn't stretch to bottom of page. */
