@@ -423,8 +423,13 @@ header ul li ul li a:hover {
 /*  INDEX SECTION BEGIN  */
 /* logo-banner SECTION BEGIN */
 .logo-banner {
+    /*
     width: 100%;
     height: auto;
+    */
+
+    width: cover;
+    height: cover;
     /* 100% of view height of device
     height: 100vh;*/
     /* Code takes total height view and subtracts an amount, similar to padding, so image doesn't stretch to bottom of page. */
