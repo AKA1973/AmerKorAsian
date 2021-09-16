@@ -96,12 +96,25 @@ h2 span {
 }
 
 /* This is for text between span section */
-.content h1 span{
+.contents h1 span{
     color: #111;
 }
 
-.content a{
+.contents a{
     background: lightblue;
+    padding: 1.25rem 2.33rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+    border-radius: 1.25rem;
+}
+
+.contents a:hover{
+    background: #c8ff02;
+    color: #000;
+}
+
+.content a{
+    background: rgb(225, 247, 129);
     padding: 1.25rem 2.33rem;
     text-decoration: none;
     font-size: 1.125rem;
@@ -112,6 +125,8 @@ h2 span {
     background: #034e88;
     color: #fff;
 }
+
+
 
 @keyframes change{
     0%
