@@ -12,6 +12,7 @@
 body {
     min-height: 100vh;
     display: flex;
+    background: lightblue;
     justify-content: center;
     align-items: center;
 }
@@ -19,7 +20,7 @@ body {
 section {
     height: 1020px;
     width: 480px;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-radius: 30px;
 }
 
@@ -114,13 +115,13 @@ h2 {
     .beds {
         color: #7358D4;
     }
-    &.alt {
+    /* &.alt {
         .info {
             .beds {
                 color: #7c623d;
             }
         }
-    }
+    } */
 /* Hospital #1 END */
 
 
@@ -137,7 +138,7 @@ h2 {
     }
     
     .beds {
-        color: #7c623d;
+        color: green;
 }
 /* Hospital #2 END */
 
