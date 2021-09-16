@@ -106,24 +106,28 @@ h2 span {
     text-decoration: none;
     font-size: 1.125rem;
     border-radius: 1.25rem;
+    border: 1px solid #000;
 }
 
 .contents a:hover{
     background: #c8ff02;
     color: #000;
+    border: 1px solid #000;
 }
 
 .content a{
-    background: rgb(225, 247, 129);
+    background: rgb(219, 253, 65);
     padding: 1.25rem 2.33rem;
     text-decoration: none;
     font-size: 1.125rem;
     border-radius: 1.25rem;
+    border: 1px solid #000;
 }
 
 .content a:hover{
     background: #034e88;
     color: #fff;
+    border: 1px solid #000;
 }
 
 
