@@ -168,10 +168,11 @@ header ul {
 }
 
 /* Creates hover effect acount 'AKA' link. */
-header .header-brand:hover {
-    background-color: rgb(136, 208, 236);*/ /*sky-blue*/
-    border-radius: 4px 4px 4px 4px;
-}
+/* header .header-brand:hover {
+    background-color: rgb(136, 208, 236); */
+    /*sky-blue*/
+    /* border-radius: 4px 4px 4px 4px;
+} */
 
 header ul li {
     display: inline-block;
@@ -305,10 +306,11 @@ header ul li ul li a:hover {
     }
 
     /* Creates hover effect acount 'AKA' link. */
-    header .header-brand:hover {
-        background-color: rgb(136, 208, 236);*/ /*sky-blue*/
-        border-radius: 4px 4px 4px 4px;
-    }
+    /* header .header-brand:hover {
+        background-color: rgb(136, 208, 236);*/ */
+        /*sky-blue*/
+        /* border-radius: 4px 4px 4px 4px;
+    } */
 
     header ul li {
         display: inline-block;
