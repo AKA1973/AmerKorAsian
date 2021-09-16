@@ -593,7 +593,8 @@ header ul li ul li a:hover {
     height: 250px;
     margin: auto;
     position: relative;
-    width: 90%;
+    /* Width auto makes the scrolling bar go across whole webpage. */
+    width: auto;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -602,7 +603,7 @@ header ul li ul li a:hover {
 .slide-track {
     display: flex;
     width: 100% /*calc(250px * 14)*/;
-    animation: scroll 40s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 .slide-track:hover {
