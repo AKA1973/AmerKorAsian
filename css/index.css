@@ -101,9 +101,10 @@ h2 span {
 }
 
 .contents a{
-    background: lightblue;
-    padding: 1.25rem 2.33rem;
+    background: rgb(173, 216, 230);
+    padding: 1rem 2rem;
     text-decoration: none;
+    color: #111;
     font-size: 1.125rem;
     border-radius: 1.25rem;
     border: 1px solid #000;
@@ -116,16 +117,17 @@ h2 span {
 }
 
 .content a{
-    background: rgb(219, 253, 65);
-    padding: 1.25rem 2.33rem;
+    background: #c8ff02;
+    padding: 1rem 2rem;
     text-decoration: none;
+    color: #111;
     font-size: 1.125rem;
     border-radius: 1.25rem;
     border: 1px solid #000;
 }
 
 .content a:hover{
-    background: #034e88;
+    background: rgb(173, 216, 230);
     color: #fff;
     border: 1px solid #000;
 }
