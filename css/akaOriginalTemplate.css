@@ -745,6 +745,35 @@ footer ul li a {
 /* FOOTER END*/
 
 
+
+
+/* HOW THE FOOTER WOULD LOOK ON A MOBILE PHONE BEGIN */
+@media only screen and (min-width: 300px) {
+    .footer-links-main {
+        display: block;
+    }
+    
+    /* Code to add spacing between lists sections on bottom of webpage. */
+    footer ul {
+        padding-right: 50px;
+    }
+
+    footer ul li p {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 24px;
+        color: rgb(255, 255, 0);
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+}
+/* HOW THE FOOTER WOULD LOOK ON A MOBILE PHONE END */
+
+
+
+
+
 /* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION BEGIN */
 @media only screen and (min-width: 1000px) {
     .footer-links-main {
