@@ -9,93 +9,141 @@
 /* Base Font of a browser is 16 px, so 1em = 16px */
 /* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
 
-.wrapper {
-    width: 100%;
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Code so banner doesn't appear in cellphone view */
-.img-banner {
-    display: none;
+section {
+    height: 1020px;
+    width: 480px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
 }
 
-.img-info {
-    width: 100%;
+header {
+    padding: 30px;
+    padding-top: 45px;
 }
 
-.img-info h2 {
-    padding: 30px 30px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    color: #111;
-    line-height: 44px;
+menu {
+        display: inline-block;
+        background: #f7f7f7;
+        padding: 0.5em;
+        padding-top: 1em;
+        padding-right: 1em;
+        display: inline-flex;
+        justify-content: center;
+        align-right: center;
+        border-radius: 15px;
 }
 
-.img-info p {
-    padding: 0px 30px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    color: #111;
-    line-height: 24px;
+
+main {
+    background: #f7f7f7;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    min-height: 100px;
+    padding-top: 5px;
 }
 
-/* Code below is to change what text appears next to the image */
-.img-me {
-    width: 100%;
+.buttons {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
-/* Only run the information between the curly brackets if the information afterwards is true. */
-/* Tablet specs BEGIN */
-@media only screen and (min-width: 768px) {
-    .img-banner {
-        display: block;
-        width: 100%;
-        padding-bottom: 30px;
+.button {
+    flex: 1;
+    height: 110px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 0px 20px rgba(#c8c5cb, 0.16px);
+}
+
+.hospitals {
+    padding: 15px;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3e3049;
+    margin-bottom: 20px;
+}
+
+/* Hospital #1 BEGIN */
+.hospital {
+    display: flex;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 0px 20px rgba(#c8c5cb, 0.16px);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+.info {
+    flex: 1;
     }
-
-    .wrapper {
-        width: 600px;
-        margin: 0 auto;
-    }
-
-    .img-info h2 {
-        padding: 20px 0px 0px;
+    .title {
+        font-weight: bold;
     }
     
-    .img-info p {
-        padding: 20px 0px 0px;
-    }
-
-    img-me {
-        padding-top: 30px;
-    }
-/* Tablet specs END */
-
-/* Computer specs BEGIN */
-@media only screen and (min-width: 1000px) {
-    .wrapper {
-        width: 1000px;
-    }
-
-    .img-info {
-        width: 50%;
-        float: right;
+    .location {
+        color: #665e77;
     }
     
-    .img-info h2 {
-        padding: 20px 0px 0px 30px;
+    .beds {
+        color: #7358D4;
+    }
+    &.alt {
+        .info {
+            .beds {
+                color: #7c623d;
+            }
+        }
+    }
+/* Hospital #1 END */
+
+
+/* Hospital #2 BEGIN */
+.info2 {
+    flex: 1;
+    }
+    .title {
+        font-weight: bold;
     }
     
-    .img-info p {
-        padding: 20px 0px 0px 30px;
+    .location {
+        color: #665e77;
     }
-
-    img-me {
-        padding-top: 0px;
-        width: 50%;
-        float: left;
-    }
+    
+    .beds {
+        color: #7c623d;
 }
-/* Computer specs END */
+/* Hospital #2 END */
+
+
+
+    
 
 
 
