@@ -779,21 +779,13 @@ img:hover {
         height: cover;
     }
 
-    /*
-    .logo-banner h1 {
-        display: block;
-        width: 560px;
-        margin: 0 auto;
-    }
-    */
-
     /* CODE TO MAKE THE LINK BOXES SMALLER WHEN VIEWED ON COMPUTER OR LAPTOP */
     .index-links {
         overflow: hidden;
         }
 
     .index-links div {
-        margin: 10px 5px 0px;
+        margin: 10px 5px;
         height: 220px;
         background-color: #f2f2f2;
         float: left;
@@ -815,6 +807,31 @@ img:hover {
     }
 }
 /* HOW THE WEBSITE WOULD LOOK ON A COMPUTER OR LAPTOP SECTION END */
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+    .index-links {
+        overflow: hidden;
+        background-color: #fefe33;
+        }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
