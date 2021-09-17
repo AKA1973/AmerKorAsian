@@ -161,13 +161,6 @@ h1 {
     word-spacing: 1.70rem;
     */
 
-    /* Below code width will not shrink below 300px, width exceed 600px, */
-    /* Below code height will not shrink below 150px, width exceed 300px, */
-    min-width: 300px;
-    max-width: 600px;
-    min-height: 150px;
-    max-height: 300px;
-
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 20s linear infinite;
@@ -183,7 +176,25 @@ h1 {
 }
 /* Animates text end*/
 
-
+/* code for MOTTO BEGIN */
+#motto {
+    font-size: 30px;
+    text-align: center;
+    /*
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    */
+    background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1900ff, #fefe33, #d6d5a4);
+    background-size: 400%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+/* code for MOTTO END */
 
 
 
