@@ -126,6 +126,87 @@ input, select {
     margin: 0 0 55px 0;
 }
 
+
+
+.logo-banner {
+    width: 100%;
+    /* 100% of view height of device
+    height: 100vh;*/
+    /* Code takes total height view and subtracts an amount, similar to padding, so image doesn't stretch to bottom of page. */
+    height: calc(100vh - 10px);
+    background-color: rgb(0, 4, 255);
+    background-image: url('../images/paidFibonacci/fibtransparent600.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    display: table; /* code also part of vertical-center section below */
+}
+
+
+/* Animates text begin*/
+h1 {
+    position: absolute;
+    top: 0;
+    /* Aligns AmerKorAsian at top of page */
+    text-align: center;
+
+
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    background-size: 400%;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    letter-spacing: 0.40rem;
+    font-weight: 600;
+    /*
+    word-spacing: 1.70rem;
+    */
+
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+/* Animates text end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* This section will make sure the menu item doesn't show a glitch of hiding when the webpage is refreshed. */
 .preload * {
     transition: none !important;
@@ -140,7 +221,7 @@ input, select {
     width: 100%;
     /* With the declaration in the .body section, can now just change that number and height here will also adjust. */
     height: var(--header-height);
-    background: rgb(255, 255, 0);
+    background: transparent;
     position: flex;
 }
 /* Styling the header END */
@@ -310,3 +391,123 @@ input, select {
     font-size: 18px;
 }
 /* MENU COLOR AND HOVER EFFECT END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Text color for website disclaimer on bottom of webpage begin */
+a.small {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* Text color for documents link on bottom of webpage */
+a.red {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    list-style: none;
+    /* Removes the line under linked word(s) */
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b {
+    color: rgb(12, 12, 12);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+r {
+    color: red;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a.redmenu {
+    color: red;
+}
+
+w {
+    color: #f5f5f5;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+/* FOOTER BEGIN */
+footer .content {
+    flex-grow: 1;
+    /*
+    font-style: italic;
+    color: #9b9b9b;
+    */
+  }
+  
+  footer p {
+    padding-bottom: 1.66rem;
+  }
+  
+  footer p:last-child {
+    padding-bottom: 0;
+  }
+  
+  footer .author {
+    COLOR: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  footer em {
+    /*color: #cfcfcf;*/
+    COLOR: rgb(212, 11, 11);
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    footer {
+      flex-direction: column;
+      padding: 0 10% 2rem 10%;
+}
+/* FOOTER END */
+
+
+
+
