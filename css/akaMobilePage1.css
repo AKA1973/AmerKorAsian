@@ -1,0 +1,312 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+/* Base Font of a browser is 16 px, so 1em = 16px */
+/* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
+
+.body {
+    /* Below line of code makes sure you get --header-height: 50px; throughout the entire sheet */
+    --header-height: 50px; /* Declaring a css variable */
+
+
+    /* variables are for the right, bottom, and left sides since top was declared with the --header-height variable. */
+    margin: var(--header-height) 0 0 0;
+    font-family: sans-serif;
+
+
+    /* Code to make space on the bottom of page to have menu */
+    margin: 0 0 55px 0;
+}
+
+/* This section will make sure the menu item doesn't show a glitch of hiding when the webpage is refreshed. */
+.preload * {
+    transition: none !important;
+}
+
+/* Styling the header BEGIN */
+.header {
+    /* Code makes sure the header stay fixed at the top of page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* With the declaration in the .body section, can now just change that number and height here will also adjust. */
+    height: var(--header-height);
+    background: rgb(255, 255, 0);
+    position: flex;
+}
+/* Styling the header END */
+
+
+/* Styling the side menu button functionality BEGIN */
+.header__button {
+    width: var(--header-height);
+    /* Menu icon will never be shrunk down if there are any elements to the right of the menu. */
+    flex-shrink: 0;
+    background: none;
+    outline: none;
+    border: none;
+    color: #000;
+}
+
+.nav__links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Code to make the text appear above the overlay since menu item has a z-index: 1; */
+    z-index: 2;
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+
+    /* Transform link of code will make the menu item disappear of the page. */
+    transform: translateX(-250px); /* This value needs to be the same as the width a couple lines up. */
+    transition: 0.3s;
+}
+
+/* Below line of code reverses the effect above of closing the menu item. */
+.nav--open .nav__links {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav__link {
+    /* makes sure both the icons and the name are going to be centered in the menu. */
+    display: flex;
+    align-items: center;
+
+    color: #4e4e4e;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: transform 0.2s;
+}
+
+/* Putting space between navigation and text BEGIN */
+/* Targeting the menu icon (i) */
+.nav__links > i {
+    margin-right: 15px; /* Same as second value of padding in nav__link section */
+}
+/* Putting space between navigation and text END */
+
+
+/* Will focus attention to this menu item on menu bar BEGIN */
+.nav__link--active {
+    color: #009578;
+}
+/* Will focus attention to this menu item on menu bar END */
+
+.nav__link--active,
+.nav__link:hover {
+    background: #eeeeee;
+}
+/* Styling the menu button functionality END */
+
+/* How page will look when menu is open or closed BEGIN */
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    /* will slightly blur page when menu bar is opened. */
+    backdrop-filter: blur(2px);
+
+    /* Makes sure the page works when menu is hidden */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.nav--open .nav__overlay {
+    visibility: visible;
+    opacity: 1;
+}
+/* How page will look when menu is open or closed END */
+
+/* MENU COLOR AND HOVER EFFECT BEGIN */
+.nav__link:hover {
+    background-color: rgb(204, 242, 255);
+}
+
+.nav__link--active {
+    color: #0400ff;
+}
+
+.nav___link--active {
+    color: #cc0000;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+/* MENU COLOR AND HOVER EFFECT END */
+
+
+
+
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Below number must match the margin bottom number in the 'body' section above */
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    /* 'flex' makes sure the icons on bottom or evenly placed */
+    display: flex;
+    /* BELOW CODE MAKES SURE THE USER HAS THE ABILITY TO SCROLL THROUGH THE MENU ON SMALLER DEVICES */
+    overflow-x: auto;
+}
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
+
+.nav___link {
+    display: flex;
+    /* Makes sure the icon is on top of the label/text */
+    flex-direction: column;
+    align-items: center;
+    /* Pushes down the icon and text */
+    justify-content: center;
+    /* Below code will place the icons evenly on smaller screens. */
+    flex-grow: 1;
+    min-width: 50px;
+    /* Below 2 lines prevent the text from going outside the area of the icon section. */
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    /* Removes the default blue color that appears on mobile devices after clicking icon. */
+    -webkit-tap-highlight-color: transparent;
+    /* Below code makes sure that when the icon is clicked the effect looks nice. */
+    transition: background-color 0.1s ease-in-out;
+}
+
+/* MENU COLOR AND HOVER EFFECT BEGIN */
+.nav__link:hover {
+    background-color: rgb(204, 242, 255);
+}
+
+.nav____link--active {
+    color: #0400ff;
+}
+
+.nav_____link--active {
+    color: #cc0000;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+/* MENU COLOR AND HOVER EFFECT END */

@@ -134,6 +134,28 @@ h2 span {
 
 
 
+
+.child {
+    border: 1px solid blue;
+}
+
+/* display items on top of each other in mobile mode BEGIN */
+@media (min-width: 768px) {
+    .parent {
+        display: flex;
+    }
+
+    .Section_top {
+        display: flex;
+    }
+}
+/* display items on top of each other in mobile mode END */
+
+
+
+
+
+
 @keyframes change{
     0%
     {

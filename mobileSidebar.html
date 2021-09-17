@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Text-Align</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+        <!-- below code links this to css file -->
+        <link rel="stylesheet" href="../AmerKorAsian/css/mobileSidebar.css">
+</head>
+<body class="preload">
+    <!-- Creating the menu button that will be used on mobile device BEGIN -->
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button">
+            <!-- Below code is to use Google Material Icon Library. -->
+            <i class="material-icons">menu</i>
+        </button>
+
+        <!-- Add Possible Logo Here -->
+
+        
+    </header>
+
+    <!-- <nav class="nav nav--open">-->
+    <nav class="nav"> -->
+            <!-- Below section will contain all the button navigation links. -->
+        <div class="nav__links">
+            <a href="#" class="nav__link">
+                <i class="material-icons">dashboard</i>
+                Dashboard
+            </a>
+            <a href="#" class="nav__link nav__link--active" href="#">
+                <i class="material-icons">source</i>
+                Projects
+            </a>
+            <a href="#" class="nav__link" href="#">
+                <i class="material-icons">lock</i>
+                Security
+            </a>
+            <a href="#" class="nav__link" href="#">
+                <i class="material-icons">history</i>
+                History
+            </a>
+            <a href="#" class="nav__link" href="#">
+                <i class="material-icons">person</i>
+                Profile
+            </a>
+        </div>
+        <div class="nav__overlay"></div>
+    </nav>
+
+    <main>
+        <br>
+        Hi my name is Ryan
+    </main>
+
+    <!-- JavaScript code section BEGIN -->
+    <!-- Code gives the menu section ability to open and close -->
+    <script>
+        window.addEventListener("load", () => {
+            document.body.classList.remove("preload");
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.querySelector(".nav");
+
+            document.querySelector("#btnNav").addEventListener("click", () => {
+                nav.classList.add("nav--open");
+            });
+
+            document.querySelector(".nav__overlay").addEventListener("click", () => {
+                nav.classList.remove("nav--open");
+            });
+
+        })
+    </script>
+    <!-- JavaScript code section END -->
+
+
+
+
+
+    <!-- Creating the menu button that will be used on mobile device END -->
+
+
+</body>
+</html>
+
+
+

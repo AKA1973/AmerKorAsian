@@ -1,0 +1,189 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+/* Base Font of a browser is 16 px, so 1em = 16px */
+/* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
+
+body {
+    /* Code to make space on the bottom of page to have menu */
+    margin: 0 0 55px 0;
+}
+
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Below number must match the margin bottom number in the 'body' section above */
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    /* 'flex' makes sure the icons on bottom or evenly placed */
+    display: flex;
+    /* BELOW CODE MAKES SURE THE USER HAS THE ABILITY TO SCROLL THROUGH THE MENU ON SMALLER DEVICES */
+    overflow-x: auto;
+}
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
+
+.nav__link {
+    display: flex;
+    /* Makes sure the icon is on top of the label/text */
+    flex-direction: column;
+    align-items: center;
+    /* Pushes down the icon and text */
+    justify-content: center;
+    /* Below code will place the icons evenly on smaller screens. */
+    flex-grow: 1;
+    min-width: 50px;
+    /* Below 2 lines prevent the text from going outside the area of the icon section. */
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    /* Removes the default blue color that appears on mobile devices after clicking icon. */
+    -webkit-tap-highlight-color: transparent;
+    /* Below code makes sure that when the icon is clicked the effect looks nice. */
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: rgb(204, 242, 255);
+}
+
+.nav__link--active {
+    color: #0400ff;
+}
+
+.nav___link--active {
+    color: #cc0000;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
