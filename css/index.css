@@ -96,28 +96,12 @@ h2 span {
 }
 
 /* This is for text between span section */
-.contents h1 span{
+.content h1 span{
     color: #111;
-}
-
-.contents a{
-    background: rgb(173, 216, 230);
-    padding: 1rem 2rem;
-    text-decoration: none;
-    color: #111;
-    font-size: 1.125rem;
-    border-radius: 1.25rem;
-    border: 1px solid #000;
-}
-
-.contents a:hover{
-    background: #c8ff02;
-    color: #000;
-    border: 1px solid #000;
 }
 
 .content a{
-    background: #c8ff02;
+    background: rgb(173, 216, 230);
     padding: 1rem 2rem;
     text-decoration: none;
     color: #111;
@@ -127,12 +111,10 @@ h2 span {
 }
 
 .content a:hover{
-    background: rgb(173, 216, 230);
-    color: #fff;
+    background: #c8ff02;
+    color: #000;
     border: 1px solid #000;
 }
-
-
 
 
 .child {

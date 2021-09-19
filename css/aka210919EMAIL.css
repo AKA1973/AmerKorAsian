@@ -112,7 +112,13 @@ input, select {
 /* Base Font of a browser is 16 px, so 1em = 16px */
 /* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
 
-/* Beginning of my code */
+
+
+
+
+
+
+/* BEGINNING OF MY CODE*/
 /* Code in the 'asterisk' section applies to everything in code */
 * {
     text-decoration: none;
@@ -121,6 +127,7 @@ body {
     /*
     background: rgb(136, 208, 236);*/ /*sky-blue*/
     background: rgb(32.93, 71.31, 152.52);
+    font-family: sans-serif;
 }
 
 
@@ -212,49 +219,108 @@ header .header-cases {
 
 
 
-/* MENU LIST in a row BEGIN */
-/* To make the list a dropdown, change display to none.*/
-header ul li ul {
-    /*display: block;*/
-    display: none;
-    position: absolute;
-    background-color: #000;
-    padding: 20px 20px;
-    /* below code is to round the edges, first 2 are the top left and right*/
-    border-radius: 4px 4px 4px 4px;
+/* email section BEGIN */
+body {
+    font-family: sans-serif;
 }
 
-header ul li:hover ul {
-    display: block;
+section {
+    height: 100vh;
+    width: 100%;
+    /*
+    background-color: aliceblue;
+    */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-/* This section makes sure the menu items are on one line */
-header ul li ul li {
-    width: 250px;
-    border-radius: 4px;
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-/* List menu items detail BEGIN */
-header ul li ul li a {
-    display: block;
-    padding: 8px 20px;
-    font-weight: 100;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-/* List menu items detail END */
-
-header ul li ul li a:hover a {
-    display: block;
+.form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
 }
 
-header ul li ul li a:hover {
-    background-color: rgb(32.93, 71.31, 152.52);
-    /* code to make background transparent */
-    background: rgba(0, 0, 0, 0, .7);
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(12, 128, 128, 0.199);
+    margin-top: 5px;
 }
-/* MENU LIST in a row END */
-/* HEADER SECTION END */
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color: rgba(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 3s ease background-color;
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(214, 226, 236);
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: red;
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+/* email section END */
+
 
 
 
@@ -278,12 +344,13 @@ header ul li ul li a:hover {
         /*to correctly center the header on the left side within the border, need to subtract line-height from 100px and divide by 2 (100-40) = 60 / 2 = 30 */
         margin: 20px 0;
         text-align: left;
-        /* line-height code is for border line between name and menu items. */
-        line-height: 40px;
+        /* line-height code is for border line between name and menu items.
+        line-height: 40px; */
         padding: 0px 15px 0px 15px;
 
         /* Need both lines of code to correctly display the solid border line separating name and menu items. */
-        border-right: 2px solid #111;
+        /* Size of line = 2px, Style of line = solid, color = black */
+        border-right: 2px transparent transparent;
         float: left;
     }
 

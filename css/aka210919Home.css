@@ -121,6 +121,9 @@ body {
     /*
     background: rgb(136, 208, 236);*/ /*sky-blue*/
     background: rgb(32.93, 71.31, 152.52);
+
+    /* Code to make space on the bottom of page to have menu */
+    margin: 0 0 55px 0;
 }
 
 
@@ -169,7 +172,7 @@ header ul {
 
 /* Creates hover effect acount 'AKA' link. */
 header .header-brand:hover {
-    background-color: rgb(136, 208, 236);*/ /*sky-blue*/
+    background-color: rgb(136, 208, 236); /*sky-blue*/
     border-radius: 4px 4px 4px 4px;
 }
 
@@ -254,6 +257,15 @@ header ul li ul li a:hover {
     background: rgba(0, 0, 0, 0, .7);
 }
 /* MENU LIST in a row END */
+
+/* Customizing LOGIN section BEGIN */
+.redLogin {
+    color: rgb(240, 46, 46);
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Customizing LOGIN section END */
 /* HEADER SECTION END */
 
 
@@ -264,7 +276,7 @@ header ul li ul li a:hover {
 
 
 
-/* MEDIA HEADER SECTION BEGIN */
+/* HEADER SECTION BEGIN */
 /* Instructions for the width and changing the content inside the website for a desktop version of the website  */
 @media only screen and (min-width: 1000px) {
     header .header-brand {
@@ -297,7 +309,7 @@ header ul li ul li a:hover {
 
     /* Creates hover effect acount 'AKA' link. */
     header .header-brand:hover {
-        background-color: rgb(136, 208, 236);*/ /*sky-blue*/
+        background-color: rgb(136, 208, 236); /*sky-blue*/
         border-radius: 4px 4px 4px 4px;
     }
 
@@ -383,7 +395,16 @@ header ul li ul li a:hover {
     }
     /* MENU LIST in a row END */
 
-    /* Creates hover effect acount 'About Us' link. */
+    /* Customizing LOGIN section BEGIN */
+    .redLogin {
+        color: rgb(240, 46, 46);
+        font-weight: bold;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Customizing LOGIN section END */
+
+    /* Creates hover effect around 'About Us' link. */
     header .header-cases:hover {
         background-color: #fff;
         border-radius: 4px 4px 4px 4px;
@@ -410,7 +431,7 @@ header ul li ul li a:hover {
     }
     /* CODE TO PUT HEADER ITEM ON RIGHT SIDE END */
 }
-/* MEDIA HEADER SECTION END */
+/* HEADER SECTION END */
 
 
 
@@ -423,8 +444,14 @@ header ul li ul li a:hover {
 /*  INDEX SECTION BEGIN  */
 /* logo-banner SECTION BEGIN */
 .logo-banner {
+    /*
     width: 100%;
     height: auto;
+    */
+
+    width: cover;
+    height: cover;
+    background-size: cover;
     /* 100% of view height of device
     height: 100vh;*/
     /* Code takes total height view and subtracts an amount, similar to padding, so image doesn't stretch to bottom of page. */
@@ -564,6 +591,108 @@ header ul li ul li a:hover {
 
 
 
+/* IMAGE SLIDER BEGIN */
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    /* Width auto makes the scrolling bar go across whole webpage. */
+    width: auto;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: 100% /*calc(250px * 14)*/;
+    animation: scroll 30s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(calc(-250px * 7));
+    }
+}
+
+.slide {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    perspective: 100px;
+}
+
+/* TEXT ON BACK OF IMAGE BEGIN */
+.imageBack {
+    position: relative;
+    width: 300px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-display: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* with an opacity of zero, text is hidden by default */
+    opacity: 0;
+    text-decoration: none;
+}
+
+
+/* Makes text color on back of image overlay white */
+.image__overlay a {
+    text-decoration: none;
+    list-style: none;
+    color: white
+}
+
+.image__overlay:hover {
+    /* with an opacity of 1 when hovering, the text information will appear on top of image */
+    opacity: 1;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+/* TEXT ON BACK OF IMAGE END */
+
+img {
+    height: 50%;
+    width: 50%;
+    transition: transform 1s;
+    /* code below is suppose to round the edges of images when viewed on website */
+    border-radius: 0px 0px 0px 0px;
+}
+
+img:hover {
+    transform: translateZ(20px);
+    /* with an opacity of 1 when hovering, the text information will appear on top of image */
+    opacity: 1;
+}
+/* IMAGE SLIDER END */
+
 
 
 
@@ -613,7 +742,7 @@ header ul li ul li a:hover {
 /* index-links SECTION BEGIN */
 /* To change the look of sections for entire class of items BEGIN */
 .index-links div {
-    margin: 10px 10px 0;
+    margin: 10px 10px 10px;
     width: calc(100% - 20px);
     height: 100px;
     background-color: #fff;
@@ -653,21 +782,13 @@ header ul li ul li a:hover {
         height: cover;
     }
 
-    /*
-    .logo-banner h1 {
-        display: block;
-        width: 560px;
-        margin: 0 auto;
-    }
-    */
-
     /* CODE TO MAKE THE LINK BOXES SMALLER WHEN VIEWED ON COMPUTER OR LAPTOP */
     .index-links {
         overflow: hidden;
         }
 
     .index-links div {
-        margin: 10px 5px 0px;
+        margin: 10px 5px;
         height: 220px;
         background-color: #f2f2f2;
         float: left;
@@ -689,6 +810,32 @@ header ul li ul li a:hover {
     }
 }
 /* HOW THE WEBSITE WOULD LOOK ON A COMPUTER OR LAPTOP SECTION END */
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+    .index-links {
+        overflow: hidden;
+        background-color: #fefe33;
+        margin-inline: auto;
+    }
+
+    .index-links div {
+        margin: cover;
+        height: cover;
+        background-color: #f2f2f2;
+    }
+}
+
+
+
+
 
 
 
@@ -769,109 +916,75 @@ header ul li ul li a:hover {
 
 
 
-/* Text color for website disclaimer on bottom of webpage begin */
-a.small {
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
+/* FOOTER BEGIN*/
+/* Footer is the container section */
+footer {
+    width: calc(100% - 0px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
 }
 
-/* Text color for documents link on bottom of webpage */
-a.red {
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
+footer ul {
+    /* Code below will always change the width when new content is added */
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+}
+
+footer ul li {
+    display: block;
     list-style: none;
-    /* Removes the line under linked word(s) */
-    text-decoration: none;
-    list-style: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-b {
-    color: rgb(12, 12, 12);
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    list-style-type: none;
+footer ul li a {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    line-height: 35px;
 }
 
-r {
-    color: red;
-    font-size: 1.15rem;
-    font-weight: bold;
-    text-decoration: none;
-    list-style-type: none;
+.footer-links-main {
+    display: none;
 }
 
-a.redmenu {
-    color: red;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
+/* Code to change icons to fit section BEGIN */
+.footer-sm {
+    width: 50px;
+    float: right;
 }
 
-a.redmenu:hover {
-    background: lightblue;
-    transform: translateZ(20px);
-    /* below code is to round the edges, first 2 are the top left and right*/
-    border-radius: 0px 0px 0px 0px;
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
 }
+/* Code to change icons to fit section END */
 
-w {
-    color: #f5f5f5;
-    font-size: 1rem;
-    list-style-type: none;
-}
+/* FOOTER END*/
 
-/* FOOTER BEGIN */
-footer .content {
-    flex-grow: 1;
-    /*
-    font-style: italic;
-    color: #9b9b9b;
-    */
-  }
-  
-  footer p {
-    padding-bottom: 1.66rem;
-  }
-  
-  footer p:last-child {
-    padding-bottom: 0;
-  }
-  
-  footer .author {
-    COLOR: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  footer em {
-    /*color: #cfcfcf;*/
-    COLOR: rgb(212, 11, 11);
-    font-weight: bold;
-  }
-  
-  @media only screen and (max-width: 750px) {
-    footer {
-      flex-direction: column;
-      padding: 0 10% 2rem 10%;
+
+/* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION BEGIN */
+@media only screen and (min-width: 1000px) {
+    .footer-links-main {
+        display: block;
+    }
+    
+    /* Code to add spacing between lists sections on bottom of webpage. */
+    footer ul {
+        padding-right: 50px;
+    }
+
+    footer ul li p {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 24px;
+        color: rgb(255, 255, 0);
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
 }
-/* FOOTER END */
+/* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION END */
+
+
