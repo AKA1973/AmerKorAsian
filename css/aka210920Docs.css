@@ -121,6 +121,9 @@ body {
     /*
     background: rgb(136, 208, 236);*/ /*sky-blue*/
     background: rgb(32.93, 71.31, 152.52);
+
+    /* Code to make space on the bottom of page to have menu */
+    margin: 0 0 55px 0;
 }
 
 
@@ -834,7 +837,94 @@ img:hover {
 
 
 
+/* code for DOCUMENTS BEGIN */
+.link {
+    font-size: 1.50rem;
+    padding: 0rem 20rem;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
 
+/* Removes dot in front of hyperlinked word */
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+a.docs {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* code for DOCUMENTS END */
+
+
+
+
+
+
+/* BOTTOM NAVIGATION MENUBAR BEGIN */
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Below number must match the margin bottom number in the 'body' section above */
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: rgb(197, 239, 255);
+    /* 'flex' makes sure the icons on bottom or evenly placed */
+    display: flex;
+    /* BELOW CODE MAKES SURE THE USER HAS THE ABILITY TO SCROLL THROUGH THE MENU ON SMALLER DEVICES */
+    overflow-x: auto;
+}
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
+
+.nav__link {
+    display: flex;
+    /* Makes sure the icon is on top of the label/text */
+    flex-direction: column;
+    align-items: center;
+    /* Pushes down the icon and text */
+    justify-content: center;
+    /* Below code will place the icons evenly on smaller screens. */
+    flex-grow: 1;
+    min-width: 50px;
+    /* Below 2 lines prevent the text from going outside the area of the icon section. */
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    /* Removes the default blue color that appears on mobile devices after clicking icon. */
+    -webkit-tap-highlight-color: transparent;
+    /* Below code makes sure that when the icon is clicked the effect looks nice. */
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.nav__link--active {
+    color: #009614;
+}
+
+.nav___link--active {
+    color: #0400ff;
+}
+
+.nav____link--active {
+    color: #cc0000;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+/* BOTTOM NAVIGATION MENUBAR END */
 
 
 

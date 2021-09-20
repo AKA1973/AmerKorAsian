@@ -219,7 +219,6 @@ header .header-cases {
 
 
 
-/* email section BEGIN */
 body {
     font-family: sans-serif;
 }
@@ -230,6 +229,7 @@ section {
     /*
     background-color: aliceblue;
     */
+    background-color: rgb(32.93, 71.31, 152.52);;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,7 +282,8 @@ button[type="submit"]{
 }
 
 button[type="submit"]:hover{
-    background-color: rgb(214, 226, 236);
+    background-color: rgb(0, 52, 194);
+    color: #fff;
 }
 
 #status {
@@ -296,13 +297,15 @@ button[type="submit"]:hover{
 
 #status.success {
     background-color: rgb(211, 250, 153);
-    animation: status 4s ease forwards;
+    color: #000;
+    /* Message will disappear after 4 seconds. */
+    animation: status 2s ease forwards;
 }
 
 #status.error {
     background-color: red;
     color: white;
-    animation: status 4s ease forwards;
+    animation: status 2s ease forwards;
 }
 
 @keyframes status {
@@ -319,7 +322,8 @@ button[type="submit"]:hover{
         pointer-events: none;
     }
 }
-/* email section END */
+
+/* email section end */
 
 
 
