@@ -295,7 +295,7 @@ header ul li ul li a:hover {
         padding: 0px 15px 0px 15px;
 
         /* Need both lines of code to correctly display the solid border line separating name and menu items. */
-        border-right: 2px solid #111;
+        border-right: 2px solid transparent;
         float: left;
     }
 

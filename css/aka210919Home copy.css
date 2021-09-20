@@ -908,132 +908,60 @@ img:hover {
 
 
 
-/* CLOCKS BEGIN */
-/* NEW YORK AND CHICAGO CLOCKS */
-.iframe-container {
-    position: relative;
-    justify-content: right;
-    /* PUTS ALL IMAGES IN A COLUMN
-    flex-direction: column;
-    */
-    text-align: right;
-    width: 100%;
-    padding: 0rem 1.25rem;
+
+
+
+
+
+
+
+
+/* FOOTER BEGIN*/
+/* Footer is the container section */
+footer {
+    width: calc(100% - 0px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
 }
 
-/* LONDON AND SEOUL CLOCKS */
-.iframe-container2 {
-    position: relative;
-    justify-content: right;
-    text-align: right;
-    width: 100%;
-    padding: 0rem 1.25rem;
+footer ul {
+    /* Code below will always change the width when new content is added */
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
 }
 
-#textPlace {
-position: relative;
-text-align: right;
-color: yellow;
-font-weight: bold;
-justify-content: center;
-
-}
-/* CLOCKS END */
-
-
-
-
-
-
-/* FOOTER BEGIN */
-/* Text color for website disclaimer on bottom of webpage begin */
-a.small {
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-/* Text color for documents link on bottom of webpage */
-a.red {
-    color: red;
-    font-weight: bold;
-    font-size: 20px;
-    list-style: none;
-    /* Removes the line under linked word(s) */
-    text-decoration: none;
+footer ul li {
+    display: block;
     list-style: none;
 }
 
-b {
+footer ul li a {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
     color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    list-style-type: none;
+    line-height: 35px;
 }
 
-r {
-    color: red;
-    font-size: 1.15rem;
-    font-weight: bold;
-    text-decoration: none;
-    list-style-type: none;
+.footer-links-main {
+    display: none;
 }
 
-a.redmenu {
-    color: red;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: bold;
+/* Code to change icons to fit section BEGIN */
+.footer-sm {
+    width: 50px;
+    float: right;
 }
 
-a.redmenu:hover {
-    background: lightblue;
-    transform: translateZ(20px);
-    /* below code is to round the edges, first 2 are the top left and right*/
-    border-radius: 0px 0px 0px 0px;
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
 }
+/* Code to change icons to fit section END */
 
-w {
-    color: #f5f5f5;
-    font-size: 1rem;
-    list-style-type: none;
-}
-
-footer .content {
-    flex-grow: 1;
-    /*
-    font-style: italic;
-    color: #9b9b9b;
-    */
-  }
-  
-  footer p {
-    padding-bottom: 1.66rem;
-  }
-  
-  footer p:last-child {
-    padding-bottom: 0;
-  }
-  
-  footer .author {
-    COLOR: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  
-  em {
-    /*color: #cfcfcf;*/
-    COLOR: rgb(212, 11, 11);
-    font-weight: bold;
-  }
-  
-  @media only screen and (max-width: 750px) {
-    footer {
-      flex-direction: column;
-      padding: 0 10% 2rem 10%;
-}
-/* FOOTER END */
+/* FOOTER END*/
 
 
 /* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION BEGIN */
