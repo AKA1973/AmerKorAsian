@@ -112,6 +112,21 @@ input, select {
 /* Base Font of a browser is 16 px, so 1em = 16px */
 /* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Beginning of my code */
 /* Code in the 'asterisk' section applies to everything in code */
 * {
@@ -125,12 +140,6 @@ body {
     /* Code to make space on the bottom of page to have menu */
     margin: 0 0 55px 0;
 }
-
-
-
-
-
-
 
 /* HEADER SECTION BEGIN */
 header {
