@@ -952,12 +952,17 @@ a.red {
     list-style: none;
 }
 
+w {
+    color: rgb(200, 249, 255);
+    font-size: 1.25rem;
+    font-family: serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
 b {
     color: #fff;
     font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    list-style-type: none;
 }
 
 r {
