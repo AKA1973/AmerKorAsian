@@ -858,6 +858,10 @@ a.docs {
     font-weight: bold;
     text-decoration: none;
 }
+
+h3 {
+    color: rgb(255, 255, 0);
+}
 /* code for DOCUMENTS END */
 
 
@@ -929,60 +933,96 @@ a.docs {
 
 
 
-
-
-
-
-
-
-
-
-/* FOOTER BEGIN*/
-/* Footer is the container section */
-footer {
-    width: calc(100% - 0px);
-    padding: 40px 40px;
-    margin-top: 20px;
-    background-color: #fff;
-    overflow: hidden;
+/* FOOTER BEGIN */
+/* Text color for website disclaimer on bottom of webpage begin */
+a.small {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
 }
 
-footer ul {
-    /* Code below will always change the width when new content is added */
-    width: fit-content;
-    float: left;
-    padding-left: 20px;
-}
-
-footer ul li {
-    display: block;
+/* Text color for documents link on bottom of webpage */
+a.red {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    list-style: none;
+    /* Removes the line under linked word(s) */
+    text-decoration: none;
     list-style: none;
 }
 
-footer ul li a {
-    font-family: 'Catamaran', sans-serif;
-    font-size: 24px;
+b {
     color: #fff;
-    line-height: 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
 }
 
-.footer-links-main {
-    display: none;
+r {
+    color: red;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
 }
 
-/* Code to change icons to fit section BEGIN */
-.footer-sm {
-    width: 50px;
-    float: right;
+a.redmenu {
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.footer-sm img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-/* Code to change icons to fit section END */
+/* a.redmenu:hover {
+    background: lightblue;
+    transform: translateZ(20px);
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 0px 0px;
+} */
 
-/* FOOTER END*/
+w {
+    color: #f5f5f5;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+footer .content {
+    flex-grow: 1;
+    /*
+    font-style: italic;
+    color: #9b9b9b;
+    */
+  }
+  
+  footer p {
+    padding-bottom: 1.66rem;
+  }
+  
+  footer p:last-child {
+    padding-bottom: 0;
+  }
+  
+  footer .author {
+    COLOR: rgb(255, 255, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  em {
+    /*color: #cfcfcf;*/
+    COLOR: rgb(255, 44, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    footer {
+      flex-direction: column;
+      padding: 0 10% 2rem 10%;
+}
+/* FOOTER END */
 
 
 /* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION BEGIN */
