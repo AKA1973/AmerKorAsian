@@ -1,0 +1,172 @@
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/Chicago/chicagoCanal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+/* Animates text begin*/
+h2 {
+    position: relative;
+    text-align: center;
+
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    background-size: 300%;
+    font-size: 3rem;
+    font-family: monospace;
+    letter-spacing: 0.33rem;
+    /*font-weight: bold 900;*/
+    font-weight: 900;
+    word-spacing: 0.33rem;
+
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+h2 span {
+    position: relative;
+    text-align: center;
+
+    background: linear-gradient(90deg, #e6e929, #0033ff, #283ae0, #f7f332, #5144ff, #0413eed7);
+    font-family: serif;
+    background-size: 300%;
+    font-size: 6rem;
+    letter-spacing: 0.33rem;
+    font-weight: 1000; /* font-weight of 700 = bold */
+    word-spacing: 0.33rem;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+/* Animates text end*/
+
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h1{
+    color: #fff;
+    font-size: 2.80rem;
+    letter-spacing: 1rem;
+}
+
+/* This is for text between span section */
+.content h1 span{
+    color: #111;
+}
+
+.content a{
+    background: rgb(173, 216, 230);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #111;
+    font-size: 1.125rem;
+    border-radius: 1.25rem;
+    border: 1px solid #000;
+}
+
+.content a:hover{
+    background: #c8ff02;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+.child {
+    border: 1px solid blue;
+}
+
+/* display items on top of each other in mobile mode BEGIN */
+@media (min-width: 768px) {
+    .parent {
+        display: flex;
+    }
+
+    .Section_top {
+        display: flex;
+    }
+}
+/* display items on top of each other in mobile mode END */
+
+
+
+
+
+
+@keyframes change{
+    0%
+    {
+        background-image: url(../images/Chicago/chicagoCanal.jpg);
+    }
+    15%
+    {
+        background-image: url(../images/Chicago/chicagoBean.jpg);
+    }
+    30%
+    {
+        background-image: url(../images/Chicago/chicagoLakeShoreEast.jpg);
+    }
+    45%
+    {
+        background-image: url(../images/Chicago/wrigleyFieldPlaza.png);
+    }
+    60%
+    {
+        background-image: url(../images/Chicago/stateANDLake.jpg);
+    }
+    75%
+    {
+        background-image: url(../images/Chicago/chicagoLSD.jpg);
+    }
+    100%
+    {
+        background-image: url(../images/Chicago/IMG_3111.JPG);
+    }
+}
+
+
