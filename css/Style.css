@@ -1121,7 +1121,7 @@ footer.footer .move-up span:hover{
 
 /* BOTTOM NAVIGATION MENUBAR BEGIN */
 /* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
-.nav {
+.nav-bottom {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -1136,7 +1136,7 @@ footer.footer .move-up span:hover{
 }
 /* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
 
-.nav__link {
+.nav-bottom__link {
     display: flex;
     /* Makes sure the icon is on top of the label/text */
     flex-direction: column;
@@ -1159,23 +1159,23 @@ footer.footer .move-up span:hover{
     transition: background-color 0.1s ease-in-out;
 }
 
-.nav__link:hover {
+.nav-bottom__link:hover {
     background-color: rgb(255, 255, 255);
 }
 
-.nav__link--active {
+.nav-bottom__link--active {
     color: #009614;
 }
 
-.nav___link--active {
+.nav-bottom___link--active {
     color: #0400ff;
 }
 
-.nav____link--active {
+.nav-bottom____link--active {
     color: #cc0000;
 }
 
-.nav__icon {
+.nav-bottom__icon {
     font-size: 18px;
 }
 /* BOTTOM NAVIGATION MENUBAR END */
