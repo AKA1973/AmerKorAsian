@@ -450,7 +450,7 @@ header ul li ul li a:hover {
     */
 
     width: cover;
-    height: cover;
+    height: auto;
     background-size: cover;
     /* 100% of view height of device
     height: 100vh;*/
