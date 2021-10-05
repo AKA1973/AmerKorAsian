@@ -549,7 +549,7 @@ header ul li ul li a:hover {
 
     background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1a2055, #fefe33, #d6d5a4);
     background-size: 400%;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-family: sans-serif;
     letter-spacing: 0.40rem;
     font-weight: 600;
@@ -588,7 +588,7 @@ header ul li ul li a:hover {
     */
     background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1900ff, #fefe33, #d6d5a4);
     background-size: 400%;
-    font-size: 30px;
+    font-size: 25px;
     font-family: sans-serif;
     letter-spacing: px;
     font-weight: 600;
