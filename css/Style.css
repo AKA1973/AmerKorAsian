@@ -505,10 +505,11 @@ header ul li ul li a:hover {
     height: 100vh;*/
     /* Code takes total height view and subtracts an amount, similar to padding, so image doesn't stretch to bottom of page. */
     height: calc(100vh - 100px);
-    /*
-    background-image: url(../images/paidFibonacci/vectorstock_23276099.jpg);
-    */
-    background-image: url('../images/paidFibonacci/fibBlueFinal3.png');
+    
+    background-image: url(../images/paidFibonacci/fibtransparent600.png);
+   
+
+    /* background-image: url('../images/paidFibonacci/fibBlueFinal3.png'); */
     
     background-repeat: no-repeat;
     background-position: center;
@@ -1121,7 +1122,7 @@ footer.footer .move-up span:hover{
 
 /* BOTTOM NAVIGATION MENUBAR BEGIN */
 /* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
-.nav-bottom {
+.nav {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -1136,7 +1137,7 @@ footer.footer .move-up span:hover{
 }
 /* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
 
-.nav-bottom__link {
+.nav__link {
     display: flex;
     /* Makes sure the icon is on top of the label/text */
     flex-direction: column;
@@ -1159,23 +1160,23 @@ footer.footer .move-up span:hover{
     transition: background-color 0.1s ease-in-out;
 }
 
-.nav-bottom__link:hover {
+.nav__link:hover {
     background-color: rgb(255, 255, 255);
 }
 
-.nav-bottom__link--active {
+.nav__link--active {
     color: #009614;
 }
 
-.nav-bottom___link--active {
+.nav___link--active {
     color: #0400ff;
 }
 
-.nav-bottom____link--active {
+.nav____link--active {
     color: #cc0000;
 }
 
-.nav-bottom__icon {
+.nav__icon {
     font-size: 18px;
 }
 /* BOTTOM NAVIGATION MENUBAR END */
