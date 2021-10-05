@@ -6,8 +6,8 @@ html, body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
-    /* background: rgb(136, 208, 236); */ /*sky-blue*/
-    background: rgb(32.93, 71.31, 152.52);
+    background: rgb(137, 165, 255); /*sky-blue*/
+    /* background: rgb(32.93, 71.31, 152.52); */
 }
 
 :root{
