@@ -29,6 +29,7 @@ html, body{
     --Josefin : 'Josefin', cursive;
     --Lexend: 'Lexend', cursive;
     --Livvic : 'Livvic', cursive;
+    --Noto: 'Noto Serif', serif;
 }
 
 
@@ -64,7 +65,7 @@ h2{
 }
 
 h3{
-    font-family: var(--Abel);
+    font-family: var(--Noto);
     font-size: 1.3rem;
 }
 
