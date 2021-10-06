@@ -18,6 +18,7 @@ html, body{
     --white: #fff;
     --midnight: #104f55;
     --gray: #7e7e7e;
+    --yellow: rgb(255, 255, 0);
 
     /* gradient color   */
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -682,7 +683,7 @@ footer.footer .container h2{
     color: var(--white);
 }
 
-footer.footer .newsletter .form-element{
+/* footer.footer .newsletter .form-element{
     background: black;
     display: inline-block;
 }
@@ -713,7 +714,36 @@ footer.footer .instagram div > img{
 footer.footer .follow div i{
     color: var(--white);
     padding: 0 .4rem;
+} */
+
+
+/* This is my footer CSS info. BEGIN */
+em {
+    /*color: #cfcfcf;*/
+    COLOR: rgb(255, 44, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  r {
+    color: red;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
 }
+
+a.redmenu {
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* This is my footer CSS info. END */
+
+
+
+
 
 footer.footer .rights{
     justify-content: center;
@@ -727,11 +757,11 @@ footer.footer .rights h4 a{
 footer.footer .move-up{
     position: absolute;
     right: 6%;
-    top: 50%;
+    top: 70%;
 }
 
 footer.footer .move-up span{
-    color: var(--midnight);
+    color: var(--yellow);
 }
 
 footer.footer .move-up span:hover{
@@ -741,14 +771,77 @@ footer.footer .move-up span:hover{
 
 /* ---------x------- Footer ----------x---------- */
 
+
+
+
+
+/* BOTTOM NAVIGATION MENUBAR BEGIN */
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Below number must match the margin bottom number in the 'body' section above */
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: rgb(32.93, 71.31, 152.52);
+    /* 'flex' makes sure the icons on bottom or evenly placed */
+    display: flex;
+    /* BELOW CODE MAKES SURE THE USER HAS THE ABILITY TO SCROLL THROUGH THE MENU ON SMALLER DEVICES */
+    overflow-x: auto;
+}
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
+
+.nav__link {
+    display: flex;
+    /* Makes sure the icon is on top of the label/text */
+    flex-direction: column;
+    align-items: center;
+    /* Pushes down the icon and text */
+    justify-content: center;
+    /* Below code will place the icons evenly on smaller screens. */
+    flex-grow: 1;
+    min-width: 50px;
+    /* Below 2 lines prevent the text from going outside the area of the icon section. */
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    /* Removes the default blue color that appears on mobile devices after clicking icon. */
+    -webkit-tap-highlight-color: transparent;
+    /* Below code makes sure that when the icon is clicked the effect looks nice. */
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.nav__link--active {
+    color: #00ff22;
+}
+
+.nav___link--active {
+    color: #fff;
+}
+
+.nav____link--active {
+    color: #ff5656;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+/* BOTTOM NAVIGATION MENUBAR END */
+
+
+
+
+
+
 /*              Viewport less then or equal to 1130px            */
-
-
-
-
-
-
-
 /* logo-banner Smaller screen-size SECTION BEGIN */
 @media only screen and (max-width: 800px){
     .logo-banner {
@@ -762,6 +855,22 @@ footer.footer .move-up span:hover{
         background-size: contain;
         background-attachment: scroll;
         margin: 0px auto;
+
+    }
+
+    footer.footer .move-up{
+        position: absolute;
+        right: 6%;
+        top: 90%;
+    }
+    
+    footer.footer .move-up span{
+        color: var(--yellow);
+    }
+    
+    footer.footer .move-up span:hover{
+        color: var(--white);
+        cursor: pointer;
     }
 
 /* Animates text begin*/
@@ -800,12 +909,6 @@ footer.footer .move-up span:hover{
     }
 }
 /* Animates text end*/
-
-
-
-
-
-
 
 
 
