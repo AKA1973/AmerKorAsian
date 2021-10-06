@@ -215,7 +215,7 @@ p{
     position: relative;
     /* Aligns AmerKorAsian at top of page */
     text-align: center;
-    margin: 0px auto;
+    margin: 20px auto;
 
 
     background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1a2055, #fefe33, #d6d5a4);
