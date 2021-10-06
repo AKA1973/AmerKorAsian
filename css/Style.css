@@ -211,7 +211,7 @@ p{
 
 
 /* Animates text begin*/
-.logo-banner span h1 {
+.logo-banner h1 {
     position: relative;
     /* Aligns AmerKorAsian at top of page */
     text-align: center;
@@ -761,7 +761,7 @@ footer.footer .move-up span:hover{
     }
 
 /* Animates text begin*/
-.logo-banner span h1 {
+.logo-banner h1 {
         position: relative;
         text-align: center;
         margin: 0px auto;
