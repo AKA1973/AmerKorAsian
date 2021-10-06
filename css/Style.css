@@ -777,7 +777,7 @@ footer.footer .move-up span:hover{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        /* position: absolute; */
+        position: absolute;
 
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
