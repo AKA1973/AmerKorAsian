@@ -211,11 +211,11 @@ p{
 
 
 /* Animates text begin*/
-h1 {
+.logo-banner h1 {
     position: relative;
     /* Aligns AmerKorAsian at top of page */
     text-align: center;
-    margin: 20px auto;
+    margin: 0px auto;
 
 
     background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1a2055, #fefe33, #d6d5a4);
@@ -761,7 +761,7 @@ footer.footer .move-up span:hover{
     }
 
 /* Animates text begin*/
-h1 {
+.logo-banner h1 {
         position: relative;
         text-align: center;
         margin: 0px auto;
