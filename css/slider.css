@@ -1,0 +1,108 @@
+
+
+
+
+
+
+
+/* IMAGE SLIDER BEGIN */
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    /* Width auto makes the scrolling bar go across whole webpage. */
+    width: auto;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: 100% /*calc(250px * 14)*/;
+    animation: scroll 30s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(calc(-250px * 7));
+    }
+}
+
+.slide {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    perspective: 100px;
+}
+
+/* TEXT ON BACK OF IMAGE BEGIN */
+.imageBack {
+    position: relative;
+    width: 300px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-display: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* with an opacity of zero, text is hidden by default */
+    opacity: 0;
+    text-decoration: none;
+}
+
+
+/* Makes text color on back of image overlay white */
+.image__overlay a {
+    text-decoration: none;
+    list-style: none;
+    color: white
+}
+
+.image__overlay:hover {
+    /* with an opacity of 1 when hovering, the text information will appear on top of image */
+    opacity: 1;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+/* TEXT ON BACK OF IMAGE END */
+
+img {
+    height: 50%;
+    width: 50%;
+    transition: transform 1s;
+    /* code below is suppose to round the edges of images when viewed on website */
+    border-radius: 0px 0px 0px 0px;
+}
+
+img:hover {
+    transform: translateZ(20px);
+    /* with an opacity of 1 when hovering, the text information will appear on top of image */
+    opacity: 1;
+}
+/* IMAGE SLIDER END */

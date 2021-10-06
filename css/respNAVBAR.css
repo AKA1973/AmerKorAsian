@@ -1,0 +1,107 @@
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+/* Base Font of a browser is 16 px, so 1em = 16px */
+/* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
+
+/* Beginning of my code */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45, 59, 255);
+    color: #fff;
+}
+
+.brand-title a {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.brand-title a:hover {
+    background-color: #555;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    /* So the menu doesn't appear on larger screens */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/* To change the menu items to change to the menu icon when displayed on a smaller screen. */
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        /* Display needs to be 'none' so the menu icon appears instead of the menu items. */
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        /* Moves the items to the left side (flex-end), moves to the right side. */
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Code to show if the menu items should appear or not. */
+    .navbar-links.active {
+        display: flex;
+    }
+}

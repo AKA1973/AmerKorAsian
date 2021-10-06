@@ -3,22 +3,20 @@
 
 
 html, body{
+    background: rgb(136, 208, 236);
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
-    background: rgb(137, 165, 255); /*sky-blue*/
-    /* background: rgb(32.93, 71.31, 152.52); */
 }
 
 :root{
 
     /*      Theme colors        */
-    --text-gray: #5c6268;
-    --text-white: #fff;
+    --text-gray: #3f4954;
     --text-light : #686666da;
     --bg-color: #0f0f0f;
-    --white: #fff;
-    --midnight: #ef0;
+    --white: #ffffff;
+    --midnight: #104f55;
 
     /* gradient color   */
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -37,12 +35,6 @@ html, body{
 a{
     text-decoration: none;
     color: var(--text-gray);
-}
-
-a{
-    text-decoration: none;
-    color: var(--text-white);
-    font-size: 1.5rem;
 }
 
 .flex-row{
@@ -90,10 +82,6 @@ span{
     color: var(--text-gray);
 }
 
-.text-white{
-    color: var(--text-white);
-}
-
 p{
     font-family: var(--Lexend);
     color: var(--text-light);
@@ -101,315 +89,10 @@ p{
 
 /* ------x------- Global Classes -------x-------*/
 
-
-/* HEADER SECTION BEGIN */
-header {
-    /* Details for header background color */
-    position: fixed;
-    z-index: 1;
-    background-color: transparent;
-    width: 100%;
-    height: 80px;
-}
-
-header .header-brand {
-    /* Details for AKA logo */
-    font-family: serif;
-    font-size: 40px;
-    font-weight: 900;
-    /*
-    color: rgb(37, 77, 187);
-    */
-    color: #fff;
-    /*
-    text-shadow: 2px 2px #111;
-    */
-    text-transform: uppercase;
-    /* below 2 lines of code centers the header */
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 5px 0px;
-}
-
-/* Navigation Link section BEGIN */
-header ul {
-    display: block;
-    margin: 0 auto;
-    /* Centers the navigation links on page no matter the size website is viewed. */
-    width: fit-content;
-}
-
-/* Creates hover effect acount 'AKA' link. */
-header .header-brand:hover {
-    background-color: rgb(136, 208, 236); /*sky-blue*/
-    border-radius: 4px 4px 4px 4px;
-}
-
-header ul li {
-    display: inline-block;
-    position: relative;
-    float: left;
-    /* Removes Bullet-Points */
-    list-style: none;
-    /* Spacing between menu items on header. */
-    padding: 0px 10px 0px 10px;
-}
-
-/* Creates hover effect acount 'Menu and contact' link. */
-header ul li:hover {
-    background-color: rgb(136, 208, 236);*/ /*sky-blue*/
-    border-radius: 8px 8px 8px 8px;
-}
-
-/* Navigation Link section Begin */
-header ul li a {
-    /*
-    display: block;
-    */
-    text-decoration: none;
-    font-family: serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    /* Below code will make the header text all uppercase on all devices. */
-    text-transform: uppercase;
-}
-/* Navigation Link section END */
-
-/* This line of code will make this section not visible when viewed on smaller devices like mobile phones. */
-header .header-cases {
-    display: none;
-}
-
-
-
-
-/* MENU LIST in a row BEGIN */
-/* To make the list a dropdown, change display to none.*/
-header ul li ul {
-    /*display: block;*/
-    display: none;
-    position: absolute;
-    background-color: #000;
-    padding: 20px 20px;
-    /* below code is to round the edges, first 2 are the top left and right*/
-    border-radius: 4px 4px 4px 4px;
-}
-
-header ul li:hover ul {
-    display: block;
-}
-
-/* This section makes sure the menu items are on one line */
-header ul li ul li {
-    width: 250px;
-    border-radius: 4px;
-}
-
-/* List menu items detail BEGIN */
-header ul li ul li a {
-    display: block;
-    padding: 8px 20px;
-    font-weight: 100;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-/* List menu items detail END */
-
-header ul li ul li a:hover a {
-    display: block;
-}
-
-header ul li ul li a:hover {
-    background-color: rgb(32.93, 71.31, 152.52);
-    /* code to make background transparent */
-    background: rgba(0, 0, 0, 0, .7);
-}
-/* MENU LIST in a row END */
-
-/* Customizing LOGIN section BEGIN */
-.redLogin {
-    color: rgb(240, 46, 46);
-    font-weight: bold;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-/* Customizing LOGIN section END */
-/* HEADER SECTION END */
-
-
-
-
-
-
-
-
-
-/* HEADER SECTION BEGIN */
-/* Instructions for the width and changing the content inside the website for a desktop version of the website  */
-@media only screen and (min-width: 1000px) {
-    header .header-brand {
-        /* The below items need to change to make the website correctly display on a desktop
-        text-shadow: 2px 2px #111;
-        */
-        
-        text-transform: uppercase;
-        /* below 2 lines of code centers the header */
-        display: block;
-        /*to correctly center the header on the left side within the border, need to subtract line-height from 100px and divide by 2 (100-40) = 60 / 2 = 30 */
-        margin: 20px 0;
-        text-align: left;
-        /* line-height code is for border line between name and menu items. */
-        line-height: 40px;
-        padding: 0px 15px 0px 15px;
-
-        /* Need both lines of code to correctly display the solid border line separating name and menu items. */
-        border-right: 2px solid transparent;
-        float: left;
-    }
-
-    /* THIS SECTION PLACES THE MENU ITEMS ON THE WEBSITE BEGIN */
-    /* Navigation Link section BEGIN */
-    header ul {
-        /* To center menu items on left side, need to subtract 100px - line-height: 60px from header ul li a section below and then divide by 2 to get 20px to and 20px bottom. */
-        margin: 10px 0 10px 20px;
-        float: left;
-    }
-
-    /* Creates hover effect acount 'AKA' link. */
-    header .header-brand:hover {
-        background-color: rgb(136, 208, 236); /*sky-blue*/
-        border-radius: 4px 4px 4px 4px;
-    }
-
-    header ul li {
-        display: inline-block;
-        position: relative;
-        float: left;
-        /* Removes Bullet-Points */
-        list-style: none;
-        /* Spacing between menu items on header. */
-        padding: 0px 10px 0px 10px;
-    }
-
-    /* Creates hover effect acount 'Menu and contact' link. */
-    header ul li:hover {
-        background-color: rgb(136, 208, 236);*/ /*sky-blue*/
-        border-radius: 8px 8px 8px 8px;
-    }
-
-    /* Navigation Link section Begin */
-    header ul li a {
-        /*
-        display: block;
-        */
-        text-decoration: none;
-        font-family: serif;
-        font-size: 20px;
-        color: #fff;
-        line-height: 60px;
-    }
-    /* Navigation Link section END */
-    /* THIS SECTION PLACES THE MENU ITEMS ON THE WEBSITE END */
-
-    
-    /* MENU LIST in a row BEGIN */
-    header ul li {
-        position: relative;
-        float: left;
-        list-style: none;
-        padding: 0px 10px 0px 10px;
-    }
-
-    /* To make the list a dropdown list on a computer.*/
-    header ul li ul {
-        display: none;
-        float: none;
-        position: absolute;
-        margin:0px;
-        background-color: #000;
-        padding: 0px 10px 0px 10px;
-        /* below code is to round the edges, first 2 are the top left and right*/
-        border-radius: 4px 4px 4px 4px;
-    }
-
-    header ul li:hover ul {
-        display: block;
-    }
-
-    /* This section makes sure the menu items are on one line */
-    header ul li ul li {
-        width: 250px;
-        border-radius: 4px;
-    }
-
-    /* List menu items detail BEGIN */
-    header ul li ul li a {
-        display: block;
-        padding: 8px 20px;
-        font-weight: 100;
-        font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    /* List menu items detail END */
-
-    header ul li ul li a:hover a {
-        display: block;
-    }
-
-    header ul li ul li a:hover {
-        background-color: rgb(32.93, 71.31, 152.52);
-        /* code to make background transparent */
-        background: rgba(0, 0, 0, 0, .7);
-    }
-    /* MENU LIST in a row END */
-
-    /* Customizing LOGIN section BEGIN */
-    .redLogin {
-        color: rgb(240, 46, 46);
-        font-weight: bold;
-        font-size: 24px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    /* Customizing LOGIN section END */
-
-    /* Creates hover effect around 'About Us' link. */
-    header .header-cases:hover {
-        background-color: #fff;
-        border-radius: 4px 4px 4px 4px;
-    }
-
-    /* CODE TO PUT MENU ITEM ON RIGHT SIDE BEGIN */
-    header .header-cases {
-        display: block;
-        font-family: serif;
-        font-size: 25px;
-        font-weight: bold;
-        color: rgb(255, 255, 2);
-        text-shadow: 2px 2px #111;
-        text-transform: uppercase;
-        line-height: 60px;
-        /* If I want a border around the word 'contact', use below line of code */
-        /*
-        border: 1px solid #111;
-        */
-        float: right;
-        margin-right: 20px;
-        margin-top: 20px;
-        padding: 0 20px;
-    }
-    /* CODE TO PUT HEADER ITEM ON RIGHT SIDE END */
-}
-/* HEADER SECTION END */
-
-
-
 /* --------------- navbar ----------------- */
 
 .nav{
-    /* background: white; */
-    background: transparent;
+    background: white;
     padding: 0 2rem;
     height: 0rem;
     min-height: 10vh;
@@ -438,11 +121,6 @@ header ul li ul li a:hover {
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--text-gray);
-}
-
-.nav .toggle-collapse .toggle-icons i{
-    font-size: 1.4rem;
-    color: var(--text-white);
 }
 
 .collapse{
@@ -490,7 +168,12 @@ header ul li ul li a:hover {
     color: #a1c4cf;
 }
 
+/* -------x------- navbar ---------x------- */
 
+
+
+
+/*  INDEX SECTION BEGIN  */
 /* logo-banner SECTION BEGIN */
 .logo-banner {
     /*
@@ -505,64 +188,52 @@ header ul li ul li a:hover {
     height: 100vh;*/
     /* Code takes total height view and subtracts an amount, similar to padding, so image doesn't stretch to bottom of page. */
     height: calc(100vh - 100px);
-    
-    background-image: url(../images/paidFibonacci/fibtransparent600.png);
-   
-
-    /* background-image: url('../images/paidFibonacci/fibBlueFinal3.png'); */
-    
+    /*
+    background-image: url(../images/paidFibonacci/vectorstock_23276099.jpg);
+    */
+    background: url('../images/paidFibonacci/fibtransparentLarge.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin: 0 auto;
-    display: table; /* code also part of vertical-center section below */
+    background-attachment: scroll;
+    margin: 0px auto;
 }
 
-/* Code to make sure that the text alignment is correct on any device BEGIN */
-.vertical-center {
-    display: table-cell;
-    vertical-align: middle;
-}
-/* Code to make sure that the text alignment is correct on any device END */
-
-
-.logo-banner h1 {
-    font-family: serif;
-    font-size: 70px;
-    font-weight: 900;
-    color: rgb(255, 255, 0);;
+/* .logo-banner span {
     text-align: center;
-}
+    text-transform: uppercase;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
 
 
 /* Animates text begin*/
-.logo-banner h1 {
+.logo-banner span h1 {
     position: relative;
     /* Aligns AmerKorAsian at top of page */
-    /*
-    top: 1.5rem;
-    left: 33%;
-    */
     text-align: center;
-    margin: 0 auto;
+    margin: 0px auto;
 
 
     background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1a2055, #fefe33, #d6d5a4);
-    background-size: 400%;
-    font-size: 3.5rem;
+    background-size: 600%;
+    font-size: 4.5rem;
     font-family: sans-serif;
     letter-spacing: 0.40rem;
     font-weight: 600;
-    /*
-    word-spacing: 1.70rem;
-    */
 
-    /* Below code width will not shrink below 300px, width exceed 600px, */
-    /* Below code height will not shrink below 150px, width exceed 300px, */
-    min-width: 300px;
-    max-width: 600px;
-    min-height: 150px;
-    max-height: 300px;
+    /* Below 5 lines of code puts the text in center of image. */
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+
 
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -588,16 +259,24 @@ header ul li ul li a:hover {
     */
     background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1900ff, #fefe33, #d6d5a4);
     background-size: 400%;
-    font-size: 25px;
+    font-size: 30px;
     font-family: sans-serif;
     letter-spacing: px;
     font-weight: 600;
     word-spacing: 5px;
+
+
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 20s linear infinite;
 }
 /* code for MOTTO END */
+
+
+
+
+
+
 
 
 
@@ -702,19 +381,35 @@ img:hover {
     opacity: 1;
 }
 /* IMAGE SLIDER END */
+
+
+
+
+
+
+
+.logo-banner h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    /* line-height only needed if spacing isn't good between text lines
+    line-height: 15px; */
+    color: rgb(255, 255, 0);
+    text-align: center;
+    text-shadow: 2px 2px #111;
+}
+
 /* logo-banner SECTION END */
 
-/* -------x------- navbar ---------x------- */
 
 
 /* ----------------- Main Content----------- */
 
 /* --------------- Site title ---------------- */
 main .site-title{
-    background: url('../images/paidFibonacci/fibBlueFinal3.png');
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('../assets/Background-image.png');
+    background-size: cover;
     height: 110vh;
     display: flex;
     justify-content: center;
@@ -746,7 +441,6 @@ main .site-title .btn:hover{
 /* --------------- Blog Carousel ------------ */
 
 main .blog{
-    /* background: url('../images/paidFibonacci/fibBlueFinal3.png'); */
     background: url('../assets/Abract01.png');
     background-repeat: no-repeat;
     background-position: right;
@@ -793,7 +487,7 @@ section .container .owl-nav{
 .owl-nav .owl-next .owl-nav-next{
     color: var(--text-gray);
     background: transparent;
-    font-size: 5rem;
+    font-size: 2rem;
 }
 
 .owl-theme .owl-nav [class*='owl-']:hover{
@@ -903,15 +597,15 @@ main .post-content .post-title a{
     color:  black;
 }
 
-.site-content .sidebar .pie-options .post-content{
+.site-content .sidebar .popular-post .post-content{
     padding: 1rem 0;
 }
 
-.site-content .sidebar .pie-options h2{
+.site-content .sidebar .popular-post h2{
     padding-top: 8rem;
 }
 
-.site-content .sidebar .pie-options .post-info{
+.site-content .sidebar .popular-post .post-info{
     padding: .4rem .1rem !important;
     bottom: 0rem !important;
     left: 1.5rem !important;
@@ -919,7 +613,7 @@ main .post-content .post-title a{
     background: white !important;
 }
 
-.site-content .sidebar .pie-options .post-title a{
+.site-content .sidebar .popular-post .post-title a{
     font-size: 1rem;
 }
 
@@ -1054,7 +748,7 @@ footer.footer .move-up span:hover{
         border-radius: 0% !important;
     }
 
-    .site-content .sidebar .pie-options .post-info{
+    .site-content .sidebar .popular-post .post-info{
         display: none !important;
     }
 
@@ -1119,64 +813,3 @@ footer.footer .move-up span:hover{
 }
 
 /*        x      Viewport less then or equal to 520px       x     */
-
-/* BOTTOM NAVIGATION MENUBAR BEGIN */
-/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
-.nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    /* Below number must match the margin bottom number in the 'body' section above */
-    height: 55px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: rgb(197, 239, 255);
-    /* 'flex' makes sure the icons on bottom or evenly placed */
-    display: flex;
-    /* BELOW CODE MAKES SURE THE USER HAS THE ABILITY TO SCROLL THROUGH THE MENU ON SMALLER DEVICES */
-    overflow-x: auto;
-}
-/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
-
-.nav__link {
-    display: flex;
-    /* Makes sure the icon is on top of the label/text */
-    flex-direction: column;
-    align-items: center;
-    /* Pushes down the icon and text */
-    justify-content: center;
-    /* Below code will place the icons evenly on smaller screens. */
-    flex-grow: 1;
-    min-width: 50px;
-    /* Below 2 lines prevent the text from going outside the area of the icon section. */
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: sans-serif;
-    font-size: 13px;
-    color: rgb(51, 51, 51);
-    text-decoration: none;
-    /* Removes the default blue color that appears on mobile devices after clicking icon. */
-    -webkit-tap-highlight-color: transparent;
-    /* Below code makes sure that when the icon is clicked the effect looks nice. */
-    transition: background-color 0.1s ease-in-out;
-}
-
-.nav__link:hover {
-    background-color: rgb(255, 255, 255);
-}
-
-.nav__link--active {
-    color: #009614;
-}
-
-.nav___link--active {
-    color: #0400ff;
-}
-
-.nav____link--active {
-    color: #cc0000;
-}
-
-.nav__icon {
-    font-size: 18px;
-}
-/* BOTTOM NAVIGATION MENUBAR END */
