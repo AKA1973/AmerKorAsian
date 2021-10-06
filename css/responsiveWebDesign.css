@@ -1,0 +1,151 @@
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+/* Base Font of a browser is 16 px, so 1em = 16px */
+/* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background: lightblue;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 1020px;
+    width: 480px;
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+
+header {
+    padding: 30px;
+    padding-top: 45px;
+}
+
+menu {
+        display: inline-block;
+        background: #f7f7f7;
+        padding: 0.5em;
+        padding-top: 1em;
+        padding-right: 1em;
+        display: inline-flex;
+        justify-content: center;
+        align-right: center;
+        border-radius: 15px;
+}
+
+
+main {
+    background: #f7f7f7;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    min-height: 100px;
+    padding-top: 5px;
+}
+
+.buttons {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.button {
+    flex: 1;
+    height: 110px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 0px 20px rgba(#c8c5cb, 0.16px);
+}
+
+.hospitals {
+    padding: 15px;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3e3049;
+    margin-bottom: 20px;
+}
+
+/* Hospital #1 BEGIN */
+.hospital {
+    display: flex;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 0px 20px rgba(#c8c5cb, 0.16px);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+}
+.info {
+    flex: 1;
+    }
+    .title {
+        font-weight: bold;
+    }
+    
+    .location {
+        color: #665e77;
+    }
+    
+    .beds {
+        color: #7358D4;
+    }
+    /* &.alt {
+        .info {
+            .beds {
+                color: #7c623d;
+            }
+        }
+    } */
+/* Hospital #1 END */
+
+
+/* Hospital #2 BEGIN */
+.info2 {
+    flex: 1;
+    }
+    .title {
+        font-weight: bold;
+    }
+    
+    .location {
+        color: #665e77;
+    }
+    
+    .beds {
+        color: green;
+}
+/* Hospital #2 END */
+
+
+
+    
+
+
+
+

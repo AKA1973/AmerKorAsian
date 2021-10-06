@@ -1,0 +1,1051 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background: transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* below code is to get rid of extra margin and padding that might exist. */
+* {
+    margin: 0;
+    padding: 0;
+    /* The below code resets the box model to border-box for all HTML elements. */
+    box-sizing: border-box;
+}
+
+/* Base Font of a browser is 16 px, so 1em = 16px */
+/* If font-size: 18px; - Then 1.5em would be 27px (18 + 9) */
+
+/* Beginning of my code */
+/* Code in the 'asterisk' section applies to everything in code */
+* {
+    text-decoration: none;
+}
+body {
+    /*
+    background: rgb(136, 208, 236);*/ /*sky-blue*/
+    background: rgb(32.93, 71.31, 152.52);
+
+    /* Code to make space on the bottom of page to have menu */
+    margin: 0 0 55px 0;
+}
+
+
+
+
+
+
+
+/* HEADER SECTION BEGIN */
+header {
+    /* Details for header background color */
+    position: fixed;
+    z-index: 1;
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+}
+
+header .header-brand {
+    /* Details for AKA logo */
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 900;
+    /*
+    color: rgb(37, 77, 187);
+    */
+    color: #fff;
+    /*
+    text-shadow: 2px 2px #111;
+    */
+    text-transform: uppercase;
+    /* below 2 lines of code centers the header */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+/* Navigation Link section BEGIN */
+header ul {
+    display: block;
+    margin: 0 auto;
+    /* Centers the navigation links on page no matter the size website is viewed. */
+    width: fit-content;
+}
+
+/* Creates hover effect acount 'AKA' link. */
+header .header-brand:hover {
+    background-color: rgb(136, 208, 236); /*sky-blue*/
+    border-radius: 4px 4px 4px 4px;
+}
+
+header ul li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    /* Removes Bullet-Points */
+    list-style: none;
+    /* Spacing between menu items on header. */
+    padding: 0px 10px 0px 10px;
+}
+
+/* Creates hover effect acount 'Menu and contact' link. */
+header ul li:hover {
+    background-color: rgb(136, 208, 236);*/ /*sky-blue*/
+    border-radius: 8px 8px 8px 8px;
+}
+
+/* Navigation Link section Begin */
+header ul li a {
+    /*
+    display: block;
+    */
+    text-decoration: none;
+    font-family: serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    /* Below code will make the header text all uppercase on all devices. */
+    text-transform: uppercase;
+}
+/* Navigation Link section END */
+
+/* This line of code will make this section not visible when viewed on smaller devices like mobile phones. */
+header .header-cases {
+    display: none;
+}
+
+
+
+
+/* MENU LIST in a row BEGIN */
+/* To make the list a dropdown, change display to none.*/
+header ul li ul {
+    /*display: block;*/
+    display: none;
+    position: absolute;
+    background-color: #000;
+    padding: 20px 20px;
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 4px 4px 4px 4px;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+/* This section makes sure the menu items are on one line */
+header ul li ul li {
+    width: 250px;
+    border-radius: 4px;
+}
+
+/* List menu items detail BEGIN */
+header ul li ul li a {
+    display: block;
+    padding: 8px 20px;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* List menu items detail END */
+
+header ul li ul li a:hover a {
+    display: block;
+}
+
+header ul li ul li a:hover {
+    background-color: rgb(32.93, 71.31, 152.52);
+    /* code to make background transparent */
+    background: rgba(0, 0, 0, 0, .7);
+}
+/* MENU LIST in a row END */
+
+/* Customizing LOGIN section BEGIN */
+.redLogin {
+    color: rgb(240, 46, 46);
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Customizing LOGIN section END */
+/* HEADER SECTION END */
+
+
+
+
+
+
+
+
+
+/* HEADER SECTION BEGIN */
+/* Instructions for the width and changing the content inside the website for a desktop version of the website  */
+@media only screen and (min-width: 1000px) {
+    header .header-brand {
+        /* The below items need to change to make the website correctly display on a desktop
+        text-shadow: 2px 2px #111;
+        */
+        
+        text-transform: uppercase;
+        /* below 2 lines of code centers the header */
+        display: block;
+        /*to correctly center the header on the left side within the border, need to subtract line-height from 100px and divide by 2 (100-40) = 60 / 2 = 30 */
+        margin: 20px 0;
+        text-align: left;
+        /* line-height code is for border line between name and menu items. */
+        line-height: 40px;
+        padding: 0px 15px 0px 15px;
+
+        /* Need both lines of code to correctly display the solid border line separating name and menu items. */
+        border-right: 2px solid transparent;
+        float: left;
+    }
+
+    /* THIS SECTION PLACES THE MENU ITEMS ON THE WEBSITE BEGIN */
+    /* Navigation Link section BEGIN */
+    header ul {
+        /* To center menu items on left side, need to subtract 100px - line-height: 60px from header ul li a section below and then divide by 2 to get 20px to and 20px bottom. */
+        margin: 10px 0 10px 20px;
+        float: left;
+    }
+
+    /* Creates hover effect acount 'AKA' link. */
+    header .header-brand:hover {
+        background-color: rgb(136, 208, 236); /*sky-blue*/
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    header ul li {
+        display: inline-block;
+        position: relative;
+        float: left;
+        /* Removes Bullet-Points */
+        list-style: none;
+        /* Spacing between menu items on header. */
+        padding: 0px 10px 0px 10px;
+    }
+
+    /* Creates hover effect acount 'Menu and contact' link. */
+    header ul li:hover {
+        background-color: rgb(136, 208, 236);*/ /*sky-blue*/
+        border-radius: 8px 8px 8px 8px;
+    }
+
+    /* Navigation Link section Begin */
+    header ul li a {
+        /*
+        display: block;
+        */
+        text-decoration: none;
+        font-family: serif;
+        font-size: 20px;
+        color: #fff;
+        line-height: 60px;
+    }
+    /* Navigation Link section END */
+    /* THIS SECTION PLACES THE MENU ITEMS ON THE WEBSITE END */
+
+    
+    /* MENU LIST in a row BEGIN */
+    header ul li {
+        position: relative;
+        float: left;
+        list-style: none;
+        padding: 0px 10px 0px 10px;
+    }
+
+    /* To make the list a dropdown list on a computer.*/
+    header ul li ul {
+        display: none;
+        float: none;
+        position: absolute;
+        margin:0px;
+        background-color: #000;
+        padding: 0px 10px 0px 10px;
+        /* below code is to round the edges, first 2 are the top left and right*/
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    header ul li:hover ul {
+        display: block;
+    }
+
+    /* This section makes sure the menu items are on one line */
+    header ul li ul li {
+        width: 250px;
+        border-radius: 4px;
+    }
+
+    /* List menu items detail BEGIN */
+    header ul li ul li a {
+        display: block;
+        padding: 8px 20px;
+        font-weight: 100;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* List menu items detail END */
+
+    header ul li ul li a:hover a {
+        display: block;
+    }
+
+    header ul li ul li a:hover {
+        background-color: rgb(32.93, 71.31, 152.52);
+        /* code to make background transparent */
+        background: rgba(0, 0, 0, 0, .7);
+    }
+    /* MENU LIST in a row END */
+
+    /* Customizing LOGIN section BEGIN */
+    .redLogin {
+        color: rgb(240, 46, 46);
+        font-weight: bold;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Customizing LOGIN section END */
+
+    /* Creates hover effect around 'About Us' link. */
+    header .header-cases:hover {
+        background-color: #fff;
+        border-radius: 4px 4px 4px 4px;
+    }
+
+    /* CODE TO PUT MENU ITEM ON RIGHT SIDE BEGIN */
+    header .header-cases {
+        display: block;
+        font-family: serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(255, 255, 2);
+        text-shadow: 2px 2px #111;
+        text-transform: uppercase;
+        line-height: 60px;
+        /* If I want a border around the word 'contact', use below line of code */
+        /*
+        border: 1px solid #111;
+        */
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    /* CODE TO PUT HEADER ITEM ON RIGHT SIDE END */
+}
+/* HEADER SECTION END */
+
+
+
+
+
+
+
+
+
+/*  INDEX SECTION BEGIN  */
+/* logo-banner SECTION BEGIN */
+.logo-banner {
+    /*
+    width: 100%;
+    height: auto;
+    */
+
+    width: cover;
+    height: cover;
+    background-size: cover;
+    /* 100% of view height of device
+    height: 100vh;*/
+    /* Code takes total height view and subtracts an amount, similar to padding, so image doesn't stretch to bottom of page. */
+    height: calc(100vh - 100px);
+    /*
+    background-image: url(../images/paidFibonacci/vectorstock_23276099.jpg);
+    */
+    background-image: url('../images/paidFibonacci/fibBlueFinal3.png');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    display: table; /* code also part of vertical-center section below */
+}
+
+/* Code to make sure that the text alignment is correct on any device BEGIN */
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+/* Code to make sure that the text alignment is correct on any device END */
+
+
+.logo-banner h1 {
+    font-family: serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: rgb(255, 255, 0);;
+    text-align: center;
+
+    /*
+    text-shadow: 2px 2px #111;
+    */
+
+    /* 8px piece gives the text a blurry look
+    text-shadow: 2px 2px 8px rgb(248, 252, 2); */
+
+
+    /*
+    vertical-align: top;
+    */
+}
+
+
+
+
+
+/* Code to make sure that the text alignment is correct on any device BEGIN */
+
+/* Trying to figure out how to make the text appear on the top and bottom of image with below code information. */
+
+/*
+.vertical-bottom {
+    display: table-cell;
+    vertical-align: bottom;
+}
+*/
+
+/* Code to make sure that the text alignment is correct on any device END */
+
+
+
+
+
+
+
+/* Animates text begin*/
+.logo-banner h1 {
+    position: relative;
+    /* Aligns AmerKorAsian at top of page */
+    /*
+    top: 1.5rem;
+    left: 33%;
+    */
+    text-align: center;
+    margin: 0 auto;
+
+
+    background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1a2055, #fefe33, #d6d5a4);
+    background-size: 400%;
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    letter-spacing: 0.40rem;
+    font-weight: 600;
+    /*
+    word-spacing: 1.70rem;
+    */
+
+    /* Below code width will not shrink below 300px, width exceed 600px, */
+    /* Below code height will not shrink below 150px, width exceed 300px, */
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 300px;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+/* Animates text end*/
+
+/* code for MOTTO BEGIN */
+#motto {
+    font-size: 30px;
+    text-align: center;
+    /*
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    */
+    background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1900ff, #fefe33, #d6d5a4);
+    background-size: 400%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+/* code for MOTTO END */
+
+
+
+
+
+
+
+
+
+/* IMAGE SLIDER BEGIN */
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    /* Width auto makes the scrolling bar go across whole webpage. */
+    width: auto;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: 100% /*calc(250px * 14)*/;
+    animation: scroll 30s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(calc(-250px * 7));
+    }
+}
+
+.slide {
+    height: 250px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    perspective: 100px;
+}
+
+/* TEXT ON BACK OF IMAGE BEGIN */
+.imageBack {
+    position: relative;
+    width: 300px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-display: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* with an opacity of zero, text is hidden by default */
+    opacity: 0;
+    text-decoration: none;
+}
+
+
+/* Makes text color on back of image overlay white */
+.image__overlay a {
+    text-decoration: none;
+    list-style: none;
+    color: white
+}
+
+.image__overlay:hover {
+    /* with an opacity of 1 when hovering, the text information will appear on top of image */
+    opacity: 1;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+/* TEXT ON BACK OF IMAGE END */
+
+img {
+    height: 50%;
+    width: 50%;
+    transition: transform 1s;
+    /* code below is suppose to round the edges of images when viewed on website */
+    border-radius: 0px 0px 0px 0px;
+}
+
+img:hover {
+    transform: translateZ(20px);
+    /* with an opacity of 1 when hovering, the text information will appear on top of image */
+    opacity: 1;
+}
+/* IMAGE SLIDER END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo-banner h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    /* line-height only needed if spacing isn't good between text lines
+    line-height: 15px; */
+    color: rgb(255, 255, 0);
+    text-align: center;
+    text-shadow: 2px 2px #111;
+    /* 8px piece gives the text a blurry look
+    text-shadow: 2px 2px 8px rgb(248, 252, 2); */
+    /*
+    vertical-align: bottom;
+    */
+}
+
+/*
+.directionBottom {
+    bottom: 20px;
+}
+*/
+/* logo-banner SECTION END */
+
+
+
+
+/* index-links SECTION BEGIN */
+/* To change the look of sections for entire class of items BEGIN */
+.index-links div {
+    margin: 10px 10px 10px;
+    width: calc(100% - 20px);
+    height: 100px;
+    background-color: #fff;
+}
+/* To change the look of sections for entire class of items END */
+
+.index-links div h3 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    /* line-height only needed if spacing isn't good between text lines */
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* index-links SECTION END */
+/*  INDEX SECTION END  */
+
+
+
+
+
+
+
+
+/* HOW THE WEBSITE WOULD LOOK ON A COMPUTER OR LAPTOP SECTION BEGIN */
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    /* Code centers the text below the banner.  Don't need for this, so commenting out whole section, but leaving for future reference */
+    
+    .logo-banner {
+        width: cover;
+        height: cover;
+    }
+
+    /* CODE TO MAKE THE LINK BOXES SMALLER WHEN VIEWED ON COMPUTER OR LAPTOP */
+    .index-links {
+        overflow: hidden;
+        }
+
+    .index-links div {
+        margin: 10px 5px;
+        height: 220px;
+        background-color: #f2f2f2;
+        float: left;
+    }
+
+    .index-boxlink-square {
+        /* The size of each box */
+        width: calc(25% - 20px) !important; /* The !important; code overrides the sizing in the 'div' section above. */
+    }
+
+    .index-boxlink-rectangle {
+        /* The size of each rectangle */
+        width: calc(50% - 20px) !important;
+    }
+
+    .index-links div h3 {
+        /* line-height centered if matches height amount from .index-links div section for computer / laptop version. */
+        line-height: 220px;
+    }
+}
+/* HOW THE WEBSITE WOULD LOOK ON A COMPUTER OR LAPTOP SECTION END */
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+    .index-links {
+        overflow: hidden;
+        background-color: #fefe33;
+        margin-inline: auto;
+    }
+
+    .index-links div {
+        margin: cover;
+        height: cover;
+        background-color: #f2f2f2;
+    }
+}
+
+
+
+
+
+/* code for DOCUMENTS BEGIN */
+.link {
+    font-size: 1.50rem;
+    padding: 0rem 20rem;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Removes dot in front of hyperlinked word */
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+a.docs {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h3 {
+    color: rgb(255, 255, 0);
+}
+/* code for DOCUMENTS END */
+
+
+
+
+
+
+/* BOTTOM NAVIGATION MENUBAR BEGIN */
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Below number must match the margin bottom number in the 'body' section above */
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: rgb(197, 239, 255);
+    /* 'flex' makes sure the icons on bottom or evenly placed */
+    display: flex;
+    /* BELOW CODE MAKES SURE THE USER HAS THE ABILITY TO SCROLL THROUGH THE MENU ON SMALLER DEVICES */
+    overflow-x: auto;
+}
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
+
+.nav__link {
+    display: flex;
+    /* Makes sure the icon is on top of the label/text */
+    flex-direction: column;
+    align-items: center;
+    /* Pushes down the icon and text */
+    justify-content: center;
+    /* Below code will place the icons evenly on smaller screens. */
+    flex-grow: 1;
+    min-width: 50px;
+    /* Below 2 lines prevent the text from going outside the area of the icon section. */
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    /* Removes the default blue color that appears on mobile devices after clicking icon. */
+    -webkit-tap-highlight-color: transparent;
+    /* Below code makes sure that when the icon is clicked the effect looks nice. */
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.nav__link--active {
+    color: #009614;
+}
+
+.nav___link--active {
+    color: #0400ff;
+}
+
+.nav____link--active {
+    color: #cc0000;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+/* BOTTOM NAVIGATION MENUBAR END */
+
+
+
+
+/* FOOTER BEGIN */
+/* Text color for website disclaimer on bottom of webpage begin */
+a.small {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* Text color for documents link on bottom of webpage */
+a.red {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    list-style: none;
+    /* Removes the line under linked word(s) */
+    text-decoration: none;
+    list-style: none;
+}
+
+b {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+r {
+    color: red;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a.redmenu {
+    color: red;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* a.redmenu:hover {
+    background: lightblue;
+    transform: translateZ(20px);
+    /* below code is to round the edges, first 2 are the top left and right*/
+    border-radius: 0px 0px 0px 0px;
+} */
+
+w {
+    color: #f5f5f5;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+footer .content {
+    flex-grow: 1;
+    /*
+    font-style: italic;
+    color: #9b9b9b;
+    */
+  }
+  
+  footer p {
+    padding-bottom: 1.66rem;
+  }
+  
+  footer p:last-child {
+    padding-bottom: 0;
+  }
+  
+  footer .author {
+    COLOR: rgb(255, 255, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  em {
+    /*color: #cfcfcf;*/
+    COLOR: rgb(255, 44, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    footer {
+      flex-direction: column;
+      padding: 0 10% 2rem 10%;
+}
+/* FOOTER END */
+
+
+/* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION BEGIN */
+@media only screen and (min-width: 1000px) {
+    .footer-links-main {
+        display: block;
+    }
+    
+    /* Code to add spacing between lists sections on bottom of webpage. */
+    footer ul {
+        padding-right: 50px;
+    }
+
+    footer ul li p {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 24px;
+        color: rgb(255, 255, 0);
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+}
+/* HOW THE FOOTER WOULD LOOK ON A COMPUTER OR LAPTOP SECTION END */
+
+
