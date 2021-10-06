@@ -486,16 +486,17 @@ section .container .owl-nav{
     width: 100%;
 }
 
+/* First set of Navigation Arrows */
 .owl-nav .owl-prev .owl-nav-prev,
 .owl-nav .owl-next .owl-nav-next{
-    color: var(--text-gray);
+    color: var(--yellow);
     background: transparent;
     font-size: 2rem;
 }
 
 .owl-theme .owl-nav [class*='owl-']:hover{
     background: transparent;
-    color: var(--midnight);
+    color: var(--bg-color);
 }
 
 .owl-theme .owl-nav [class*='owl-']{
