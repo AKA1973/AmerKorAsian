@@ -15,8 +15,9 @@ html, body{
     --text-gray: #3f4954;
     --text-light : #686666da;
     --bg-color: #0f0f0f;
-    --white: #ffffff;
+    --white: #fff;
     --midnight: #104f55;
+    --gray: #7e7e7e;
 
     /* gradient color   */
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -35,6 +36,11 @@ html, body{
 a{
     text-decoration: none;
     color: var(--text-gray);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
 }
 
 .flex-row{
@@ -82,6 +88,10 @@ span{
     color: var(--text-gray);
 }
 
+.text-white{
+    color: var(--white);
+}
+
 p{
     font-family: var(--Lexend);
     color: var(--text-light);
@@ -92,10 +102,10 @@ p{
 /* --------------- navbar ----------------- */
 
 .nav{
-    background: white;
-    padding: 0 2rem;
+    background: rgb(32.93, 71.31, 152.52);
+    padding: 0 1rem;
     height: 0rem;
-    min-height: 10vh;
+    min-height: 7vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -115,16 +125,17 @@ p{
 .nav .toggle-collapse .toggle-icons{
     display: flex;
     justify-content: flex-end;
-    padding: 1.7rem 0;
+    padding: 1.1rem 0;
 }
 
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
-    color: var(--text-gray);
+    color: var(--white);
 }
 
 .collapse{
-    height: 30rem;
+    /* Area when menu section is opened. */
+    height: 20rem;
 }
 
 .nav .nav-items{
@@ -133,15 +144,14 @@ p{
 }
 
 .nav .nav-items .nav-link{
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
     position: relative;
     font-family: var(--Abel);
     font-size: 1.1rem;
 }
 
 .nav .nav-items .nav-link:hover{
-    background-color: var(--midnight);
+    background-color: var(--gray);
 }
 
 .nav .nav-items .nav-link:hover a{
@@ -149,7 +159,6 @@ p{
 }
 
 .nav .nav-brand a{
-    font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
     font-family: var(--Lexend);
@@ -199,16 +208,6 @@ p{
     margin: 0px auto;
 }
 
-/* .logo-banner span {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-
 
 
 /* Animates text begin*/
@@ -231,9 +230,7 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
-
-
+    /* position: absolute; */
 
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -251,9 +248,10 @@ p{
 /* Animates text end*/
 
 /* code for MOTTO BEGIN */
-#motto {
+.logo-banner #motto {
     font-size: 30px;
     text-align: center;
+    bottom: 0;
     /*
     background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
     */
@@ -740,6 +738,73 @@ footer.footer .move-up span:hover{
 /* ---------x------- Footer ----------x---------- */
 
 /*              Viewport less then or equal to 1130px            */
+
+
+
+
+
+
+
+/* logo-banner Smaller screen-size SECTION BEGIN */
+@media only screen and (max-width: 800px){
+    .logo-banner {
+        width: cover;
+        height: auto;
+        background-size: cover;
+        height: calc(100vh - 100px);
+        background: url('../images/paidFibonacci/fibtransparentLarge.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: scroll;
+        margin: 0px auto;
+    }
+
+/* Animates text begin*/
+.logo-banner span h1 {
+        position: relative;
+        text-align: center;
+        margin: 0px auto;
+
+
+        background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1a2055, #fefe33, #d6d5a4);
+        background-size: 600%;
+        font-size: 2.5rem;
+        font-family: sans-serif;
+        letter-spacing: 0.40rem;
+        font-weight: 600;
+        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* position: absolute; */
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: animate 20s linear infinite;
+    }
+}
+/* logo-banner Smaller screen-size SECTION END */
+
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+/* Animates text end*/
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1130px){
     .site-content .post-content > .post-image .post-info{
