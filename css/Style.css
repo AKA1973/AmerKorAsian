@@ -27,7 +27,7 @@ html, body{
     --Abel: 'Abel', cursive;
     --Anton: 'Anton', cursive;
     --Josefin : 'Josefin', cursive;
-    --Lexend: 'Lexend', cursive;
+    --Lexend: 'Times New Roman', Times, serif;
     --Livvic : 'Livvic', cursive;
     --Noto: 'Noto Serif', serif;
 }
@@ -689,7 +689,7 @@ main .site-content .post-content > .post-image .post-info span{
 }
 
 main .post-content .post-title a{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--Lexend);
     font-size: 1.5rem;
 }
 
