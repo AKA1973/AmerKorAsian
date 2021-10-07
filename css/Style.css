@@ -43,6 +43,7 @@ html, body{
 a{
     text-decoration: none;
     color: var(--bg-color);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 g{
@@ -119,7 +120,9 @@ p{
 @media (min-width: 801px){
     .nav{
         /* background: rgb(32.93, 71.31, 152.52); */
-        background: transparent;
+        /* background: transparent; */
+        /* To make sure the menu items are hidden when viewed on tablet/phone. */
+        background: rgb(136, 208, 236);
         /* top right bottom left */
         /* padding: 0 2rem 1rem 2rem; */
         /* top/bottom right/left */
