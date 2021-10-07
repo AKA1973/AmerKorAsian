@@ -573,7 +573,6 @@ header ul li ul li a:hover {
 /* Animates text end*/
 
 
-/* Code for LOGIN PAGE BEGIN */
 body {
     display: grid;
     height: 100%;
@@ -585,9 +584,10 @@ body {
     overflow: hidden;
 }
 
-.container {
+/* Code for LOGIN PAGE BEGIN */
+.container-login {
     max-width: 440px;
-    padding: 0 20px;
+    padding: 20px 20px;
 
     /* might need to adjust this so the login box is centered */
     margin: 170px auto;
