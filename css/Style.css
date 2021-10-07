@@ -420,17 +420,17 @@ img:hover {
 
 
 
-.logo-banner h2 {
+/* .logo-banner h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 36px;
     font-weight: bold;
-    font-style: italic;
+    font-style: italic; */
     /* line-height only needed if spacing isn't good between text lines
     line-height: 15px; */
-    color: rgb(255, 255, 0);
+    /* color: rgb(255, 255, 0);
     text-align: center;
     text-shadow: 2px 2px #111;
-}
+} */
 
 /* logo-banner SECTION END */
 
