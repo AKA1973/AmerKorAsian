@@ -98,6 +98,7 @@ span{
 
 .text-yellow{
     color: var(--yellow);
+    font-family: 'Times New Roman', Times, serif !important;
     font-weight: 900;
 }
 
@@ -688,7 +689,7 @@ main .site-content .post-content > .post-image .post-info span{
 }
 
 main .post-content .post-title a{
-    font-family: var(--Anton);
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
 }
 
