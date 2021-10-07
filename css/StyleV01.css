@@ -112,7 +112,7 @@ p{
 /* --------------- navbar ----------------- */
 
 /* logo-banner Larger screen-size SECTION BEGIN */
-/* @media (min-width: 801px){ */
+@media (min-width: 801px){
     .nav{
         /* background: rgb(32.93, 71.31, 152.52); */
         background: transparent;
@@ -205,7 +205,7 @@ p{
     .nav .social i:hover{
         color: #a1c4cf;
     }
-/* } */
+}
 /* logo-banner Larger screen-size SECTION END */
 /* -------x------- navbar ---------x------- */
 
