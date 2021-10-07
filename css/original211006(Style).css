@@ -35,14 +35,19 @@ html, body{
 
 /* ---------------- Global Classes ---------------*/
 
-a{
+/* a{
     text-decoration: none;
     color: var(--text-gray);
-}
+} */
 
 a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--bg-color);
+}
+
+g{
+    text-decoration: none;
+    color: #00ff22;
 }
 
 .flex-row{
@@ -92,11 +97,18 @@ span{
 
 .text-white{
     color: var(--white);
+    font-weight: 900;
+}
+
+.text-yellow{
+    color: var(--yellow);
+    font-weight: 900;
 }
 
 p{
-    font-family: var(--Lexend);
-    color: var(--text-light);
+    /* font-family: var(--Lexend); */
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
 }
 
 /* ------x------- Global Classes -------x-------*/
@@ -106,7 +118,8 @@ p{
 /* logo-banner Larger screen-size SECTION BEGIN */
 @media (min-width: 801px){
     .nav{
-        background: rgb(32.93, 71.31, 152.52);
+        /* background: rgb(32.93, 71.31, 152.52); */
+        background: transparent;
         /* top right bottom left */
         /* padding: 0 2rem 1rem 2rem; */
         /* top/bottom right/left */
@@ -116,6 +129,7 @@ p{
         min-height: 7vh;
         overflow: hidden;
         transition: height 1s ease-in-out;
+        position: fixed;
     }
 
     .nav .nav-menu{    
@@ -156,6 +170,7 @@ p{
         position: relative;
         font-family: var(--Abel);
         font-size: 1.1rem;
+        color: #00ff22;
     }
 
     .nav .nav-items .nav-link:hover{
@@ -327,7 +342,7 @@ p{
 }
 
 /* TEXT ON BACK OF IMAGE BEGIN */
-.imageBack {
+.image {
     position: relative;
     width: 300px;
 }
@@ -353,19 +368,25 @@ p{
     /* with an opacity of zero, text is hidden by default */
     opacity: 0;
     text-decoration: none;
+    transition: 0.25s;
 }
 
 
 /* Makes text color on back of image overlay white */
-.image__overlay a {
-    text-decoration: none;
-    list-style: none;
-    color: white
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+    color: #fff;
 }
 
 .image__overlay:hover {
     /* with an opacity of 1 when hovering, the text information will appear on top of image */
     opacity: 1;
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .image__description {
@@ -789,63 +810,62 @@ footer.footer .move-up span:hover{
 /* @media only screen and (min-width: 300px) and (max-width: 1050px) { */
 /* @media only screen and (max-width: 1050px) { */
         /* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
-    .nav {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        /* Below number must match the margin bottom number in the 'body' section above */
-        height: 55px;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-        background-color: rgb(32.93, 71.31, 152.52);
-        /* 'flex' makes sure the icons on bottom or evenly placed */
-        display: flex;
-        /* BELOW CODE MAKES SURE THE USER HAS THE ABILITY TO SCROLL THROUGH THE MENU ON SMALLER DEVICES */
-        overflow-x: auto;
-    }
-    /* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
+.nav-links {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Below number must match the margin bottom number in the 'body' section above */
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: rgb(32.93, 71.31, 152.52);
+    /* 'flex' makes sure the icons on bottom or evenly placed */
+    display: flex;
+    /* BELOW CODE MAKES SURE THE USER HAS THE ABILITY TO SCROLL THROUGH THE MENU ON SMALLER DEVICES */
+    overflow-x: auto;
+}
+/* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
+.nav__link {
+    display: flex;
+    /* Makes sure the icon is on top of the label/text */
+    flex-direction: column;
+    align-items: center;
+    /* Pushes down the icon and text */
+    justify-content: center;
+    /* Below code will place the icons evenly on smaller screens. */
+    flex-grow: 1;
+    min-width: 50px;
+    /* Below 2 lines prevent the text from going outside the area of the icon section. */
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+    /* Removes the default blue color that appears on mobile devices after clicking icon. */
+    -webkit-tap-highlight-color: transparent;
+    /* Below code makes sure that when the icon is clicked the effect looks nice. */
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: rgb(255, 255, 255);
+}
     
-    .nav__link {
-        display: flex;
-        /* Makes sure the icon is on top of the label/text */
-        flex-direction: column;
-        align-items: center;
-        /* Pushes down the icon and text */
-        justify-content: center;
-        /* Below code will place the icons evenly on smaller screens. */
-        flex-grow: 1;
-        min-width: 50px;
-        /* Below 2 lines prevent the text from going outside the area of the icon section. */
-        overflow: hidden;
-        white-space: nowrap;
-        font-family: sans-serif;
-        font-size: 13px;
-        color: rgb(51, 51, 51);
-        text-decoration: none;
-        /* Removes the default blue color that appears on mobile devices after clicking icon. */
-        -webkit-tap-highlight-color: transparent;
-        /* Below code makes sure that when the icon is clicked the effect looks nice. */
-        transition: background-color 0.1s ease-in-out;
-    }
+.nav__link--active {
+    color: #00ff22;
+}
     
-    .nav__link:hover {
-        background-color: rgb(255, 255, 255);
-    }
+.nav___link--active {
+    color: rgb(182, 182, 182);
+}
     
-    .nav__link--active {
-        color: #00ff22;
-    }
+.nav____link--active {
+    color: #eeff00;
+}
     
-    .nav___link--active {
-        color: #fff;
-    }
-    
-    .nav____link--active {
-        color: #eeff00;
-    }
-    
-    .nav__icon {
-        font-size: 18px;
-    }
+.nav__icon {
+    font-size: 18px;
+}
 /* } */
     /* BOTTOM NAVIGATION MENUBAR END */
 /* BOTTOM NAVIGATION MENUBAR Smaller screen-size SECTION END */

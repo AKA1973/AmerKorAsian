@@ -35,14 +35,19 @@ html, body{
 
 /* ---------------- Global Classes ---------------*/
 
-a{
+/* a{
     text-decoration: none;
     color: var(--text-gray);
-}
+} */
 
 a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--bg-color);
+}
+
+g{
+    text-decoration: none;
+    color: #00ff22;
 }
 
 .flex-row{
@@ -92,11 +97,18 @@ span{
 
 .text-white{
     color: var(--white);
+    font-weight: 900;
+}
+
+.text-yellow{
+    color: var(--yellow);
+    font-weight: 900;
 }
 
 p{
-    font-family: var(--Lexend);
-    color: var(--text-light);
+    /* font-family: var(--Lexend); */
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
 }
 
 /* ------x------- Global Classes -------x-------*/
@@ -106,7 +118,8 @@ p{
 /* logo-banner Larger screen-size SECTION BEGIN */
 @media (min-width: 801px){
     .nav{
-        background: rgb(32.93, 71.31, 152.52);
+        /* background: rgb(32.93, 71.31, 152.52); */
+        background: transparent;
         /* top right bottom left */
         /* padding: 0 2rem 1rem 2rem; */
         /* top/bottom right/left */
@@ -116,6 +129,7 @@ p{
         min-height: 7vh;
         overflow: hidden;
         transition: height 1s ease-in-out;
+        position: fixed;
     }
 
     .nav .nav-menu{    
@@ -156,6 +170,7 @@ p{
         position: relative;
         font-family: var(--Abel);
         font-size: 1.1rem;
+        color: #00ff22;
     }
 
     .nav .nav-items .nav-link:hover{
@@ -327,7 +342,7 @@ p{
 }
 
 /* TEXT ON BACK OF IMAGE BEGIN */
-.imageBack {
+.image {
     position: relative;
     width: 300px;
 }
@@ -353,19 +368,25 @@ p{
     /* with an opacity of zero, text is hidden by default */
     opacity: 0;
     text-decoration: none;
+    transition: 0.25s;
 }
 
 
 /* Makes text color on back of image overlay white */
-.image__overlay a {
-    text-decoration: none;
-    list-style: none;
-    color: white
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+    color: #fff;
 }
 
 .image__overlay:hover {
     /* with an opacity of 1 when hovering, the text information will appear on top of image */
     opacity: 1;
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
 }
 
 .image__description {
@@ -789,7 +810,7 @@ footer.footer .move-up span:hover{
 /* @media only screen and (min-width: 300px) and (max-width: 1050px) { */
 /* @media only screen and (max-width: 1050px) { */
         /* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE BEGIN */
-.nav {
+.nav-links {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -835,7 +856,7 @@ footer.footer .move-up span:hover{
 }
     
 .nav___link--active {
-    color: #fff;
+    color: rgb(182, 182, 182);
 }
     
 .nav____link--active {
