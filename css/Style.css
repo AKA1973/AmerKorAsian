@@ -19,6 +19,7 @@ html, body{
     --midnight: #104f55;
     --gray: #7e7e7e;
     --yellow: rgb(255, 255, 0);
+    --blue: rgb(0, 47, 255);
 
     /* gradient color   */
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -102,10 +103,14 @@ span{
     font-weight: 900;
 }
 
+.text-blue{
+    color: var(--blue);
+    font-family: 'Times New Roman', Times, serif !important;
+    font-weight: 900;
+}
+
 p{
-    /* font-family: var(--Lexend); */
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--white);
+    font-family: var(--Lexend);
 }
 
 /* ------x------- Global Classes -------x-------*/
@@ -279,6 +284,27 @@ p{
 .logo-banner #motto {
     font-size: 30px;
     text-align: center;
+    bottom: 0;
+    /*
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    */
+    background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1900ff, #fefe33, #d6d5a4);
+    background-size: 400%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: px;
+    font-weight: 600;
+    word-spacing: 5px;
+
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+
+#motto {
+    font-size: 30px;
+    /* text-align: center; */
     bottom: 0;
     /*
     background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
@@ -881,7 +907,7 @@ a.redmenu {
 }
 
 footer .author {
-    COLOR: rgb(40, 97, 255);
+    COLOR: rgb(255, 255, 0);
     font-weight: bold;
     font-size: 1.5rem;
   }

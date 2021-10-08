@@ -861,7 +861,7 @@ img:hover {
 }
 /* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
 
-.nav__link {
+.nav__links {
     display: flex;
     /* Makes sure the icon is on top of the label/text */
     flex-direction: column;

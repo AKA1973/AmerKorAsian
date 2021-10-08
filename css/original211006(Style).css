@@ -292,8 +292,28 @@ p{
     -webkit-background-clip: text;
     animation: animate 20s linear infinite;
 }
-/* code for MOTTO END */
 
+#motto {
+    font-size: 30px;
+    /* text-align: center; */
+    bottom: 0;
+    /*
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #e6e929, #0033ff, #283ae0, #f7f332);
+    */
+    background: linear-gradient(90deg, #1900ff, #ffcc0d, #fff1a0, #1900ff, #fefe33, #d6d5a4);
+    background-size: 400%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: px;
+    font-weight: 600;
+    word-spacing: 5px;
+
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+/* code for MOTTO END */
 
 
 

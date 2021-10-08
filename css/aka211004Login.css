@@ -765,6 +765,28 @@ form .button input:hover {
 
 /* FOOTER BEGIN */
 /* Text color for website disclaimer on bottom of webpage begin */
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+}
+
 a.small {
     color: white;
     font-size: 15px;
@@ -828,8 +850,14 @@ footer .content {
   
   footer p {
     padding-bottom: 1.66rem;
+    color: var(--white);
   }
   
+  p{
+    font-family: var(--Lexend);
+    color: var(--white);
+}
+
   footer p:last-child {
     padding-bottom: 0;
   }
@@ -847,6 +875,30 @@ footer .content {
     font-weight: bold;
   }
   
+  footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Lexend);
+}
+
+footer.footer .rights h4 a{
+    color: var(--white);
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 70%;
+}
+
+footer.footer .move-up span{
+    color: var(--yellow);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
   @media only screen and (max-width: 750px) {
     footer {
       flex-direction: column;
