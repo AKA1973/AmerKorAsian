@@ -28,6 +28,26 @@
     <!-- Custom Style   -->
     <link rel="stylesheet" href="./css/Style.css">
 
+    <style>
+        .maindiv{
+            width: 40%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            transform: translate(-50%, -50%);
+            background-image: url('../AmerKorAsian/images/ryanPieCurrent.png');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: slider 15s infinite linear;
+        }
+
+        @keyframes slider{
+            0%{background-image: url('../AmerKorAsian/images/ryanPieCurrent.png'); background-size: 100% 100%; }
+            40%{background-image: url('../AmerKorAsian/images/annualizedReturn.png'); background-size: 100% 100%; }
+            80%{background-image: url('../AmerKorAsian/images/marketsVSpies.png'); background-size: 100% 100%; }
+        }
+    </style>
 </head>
 <body>
     <!-- ------------x---------------  Navigation --------------------------x------------------- -->
@@ -35,7 +55,7 @@
     <nav class="nav">
         <div class="nav-menu flex-row">
             <div class="nav-brand">
-                <a id="motto">AKA</a>
+                <a href="./index.html" id="motto">AmerKorAsian</a>
             </div>
             <div class="toggle-collapse">
                 <div class="toggle-icons">
@@ -45,7 +65,7 @@
             <div>
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="./aka211005Home.html">Home</a>
+                        <a href="./akaFINALHome.html">Home</a>
                     </li>
                     <!-- <li class="nav-link">
                         <a href="./aka211004Login.html"><em>Login</em></a>
@@ -54,13 +74,13 @@
                         <a href="./akaFINALPies.html">Pie Options</a>
                     </li>
                     <li class="nav-link">
-                        <a href="./aka211004Docs.html">Documents</a>
+                        <a href="./akaFINALDocs.html">Documents</a>
                     </li>
                     <li class="nav-link">
-                        <a href="./aka211004AboutUs.html">About Us</a>
+                        <a href="./akaFINALAboutUs.html">About Us</a>
                     </li>
                     <li class="nav-link">
-                        <a class="text-yellow" href="./aka210919EMAIL.html">Contact</a>
+                        <a class="text-yellow" href="./akaFINALEMAIL.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -74,12 +94,12 @@
     </nav>
 
     <!-- Code for text on top of FIB image -->
-    <div class="logo-banner">
+    <!-- <div class="logo-banner">
         <h1>AmerKorAsian</h1>
-        <!-- <span id="motto">Let's make money together now
+        <span id="motto">Let's make money together now
             <br>
-            so we don't have to work later</span> -->
-    </div>
+            so we don't have to work later</span>
+    </div> -->
 
     <!----------------------------- Main Site Section ------------------------------>
 
@@ -474,15 +494,15 @@
             <i class="material-icons">person</i>
             <span class="nav__text">Profile</span>
         </a> -->
-        <a href="../AmerKorAsian/aka211004Docs.html" class="nav__link nav___link--active">
+        <a href="../akaFINALDocs.html" class="nav__link nav___link--active">
             <i class="material-icons">description</i>
             <span class="nav__text">Documents</span>
         </a>
-        <a href="../AmerKorAsian/aka211004Docs.html" class="nav__link nav___link--active">
+        <a href="./akaFINALAboutUs.html" class="nav__link nav___link--active">
             <i class="material-icons">people</i>
             <span class="nav__text">About Us</span>
         </a>
-        <a href="../AmerKorAsian/aka210919EMAIL.html" class="nav__link nav____link--active">
+        <a href="./akaFINALEMAIL.html" class="nav__link nav____link--active">
             <i class="material-icons">email</i>
             <span class="nav__text">Contact</span>
         </a>
