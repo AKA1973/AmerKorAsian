@@ -7,7 +7,7 @@ body {
     user-select: none;
 }
 
-.center,
+.popbanner,
 .content {
     position: absolute;
     top: 50%;
@@ -68,7 +68,7 @@ body {
     font-weight: normal;
 }
 
-.material-icons {
+/* .fa-check {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -76,7 +76,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-}
+} */
 
 /* .fa-check {
     font-size: 50px;

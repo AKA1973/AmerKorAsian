@@ -58,7 +58,6 @@ p{
     font-family: var(--Lexend);
 }
 
-
 r {
     color: rgb(255, 255, 0);
     font-size: 1.15rem;
@@ -365,25 +364,6 @@ span{
     -webkit-background-clip: text;
     animation: animate 20s linear infinite;
 }
-
-#motto--center {
-    font-size: 30px;
-    text-align: center;
-    bottom: 0;
-
-    color: linear-gradient(90deg, #00ff4c, #ffcc0d, #fff1a0, #1900ff, #fefe33, #d6d5a4) !important;
-    background-size: 400%;
-    font-size: 30px;
-    font-family: sans-serif;
-    letter-spacing: px;
-    font-weight: 600;
-    word-spacing: 5px;
-
-/* 
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: animate 20s linear infinite; */
-}
 /* code for MOTTO END */
 
 
@@ -667,6 +647,7 @@ main .site-title .btn:hover{
 }
 
 /* --------x------ Site title --------x------- */
+
 
 /* --------------- Blog Carousel ------------ */
 
