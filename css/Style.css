@@ -62,7 +62,7 @@ r {
     color: rgb(255, 255, 0);
     font-size: 1.15rem;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 u {
@@ -193,7 +193,7 @@ span{
     .nav .nav-items .nav-link{
         padding: 0.5rem 1rem;
         position: relative;
-        font-family: var(--Abel);
+        /* font-family: var(--Abel); */
         font-size: 1.1rem;
         color: #00ff22;
     }
@@ -209,7 +209,7 @@ span{
     .nav .nav-brand a{
         padding: 1rem 0;
         display: block;
-        font-family: var(--Lexend);
+        /* font-family: var(--Lexend); */
         font-size: 1.6rem;
     }
 
@@ -944,6 +944,7 @@ a.redmenu {
 
 footer .author {
     COLOR: rgb(255, 255, 0);
+    font-family: Arial, Helvetica, sans-serif !important;
     font-weight: bold;
     font-size: 1.5rem;
   }
@@ -1013,7 +1014,7 @@ footer.footer .move-up span:hover{
     /* Below 2 lines prevent the text from going outside the area of the icon section. */
     overflow: hidden;
     white-space: nowrap;
-    font-family: var(--Lexend);
+    font-family: sans-serif;
     font-size: 13px;
     color: rgb(51, 51, 51);
     text-decoration: none;
@@ -1026,19 +1027,19 @@ footer.footer .move-up span:hover{
 .nav__link:hover {
     background-color: rgb(255, 255, 255);
 }
-    
+
 .nav__link--active {
     color: #00ff22;
 }
-    
+
 .nav___link--active {
-    color: rgb(182, 182, 182);
+    color: #aaaaaa;
 }
-    
+
 .nav____link--active {
-    color: #eeff00;
+    color: #fbff00;
 }
-    
+
 .nav__icon {
     font-size: 18px;
 }
