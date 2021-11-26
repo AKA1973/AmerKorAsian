@@ -25,11 +25,11 @@ html, body{
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
     /*      theme font-family   */
-    --Abel: 'Abel', cursive;
-    --Anton: 'Anton', cursive;
-    --Josefin : 'Josefin', cursive;
-    --Lexend: 'Times New Roman', Times, serif;
-    --Livvic : 'Livvic', cursive;
+    --Abel: 'Abel'; /*, cursive */
+    --Anton: 'Anton'; /*, cursive; */
+    --Josefin: 'Josefin'; /*, cursive; */
+    --Lexend: arial; /* 'Times New Roman', Times, serif; */
+    --Livvic : 'Livvic'; /* , cursive; */
     --Noto: 'Noto Serif', serif;
 }
 
