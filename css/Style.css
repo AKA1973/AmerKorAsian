@@ -39,7 +39,7 @@ html, body{
 a{
     text-decoration: none;
     color: var(--bg-color);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--Lexend);
 }
 
 
@@ -124,13 +124,13 @@ span{
 
 .text-yellow{
     color: var(--yellow);
-    font-family: 'Times New Roman', Times, serif !important;
+    font-family: var(--Lexend) !important;
     font-weight: 900;
 }
 
 .text-blue{
     color: var(--blue);
-    font-family: 'Times New Roman', Times, serif !important;
+    font-family: var(--Lexend) !important;
     font-weight: 900;
 }
 
