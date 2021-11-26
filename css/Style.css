@@ -28,7 +28,7 @@ html, body{
     --Abel: 'Abel'; /*, cursive */
     --Anton: 'Anton'; /*, cursive; */
     --Josefin: 'Josefin'; /*, cursive; */
-    --Lexend: arial; /* 'Times New Roman', Times, serif; */
+    --Lexend: Arial, Helvetica, sans-serif; /* 'Times New Roman', Times, serif; */
     --Livvic : 'Livvic'; /* , cursive; */
     --Noto: 'Noto Serif', serif;
 }
@@ -39,7 +39,8 @@ html, body{
 a{
     text-decoration: none;
     color: var(--bg-color);
-    font-family: var(--Lexend);
+    /*font-family: var(--Lexend);*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -55,7 +56,8 @@ g{
 }
 
 p{
-    font-family: var(--Lexend);
+    /*font-family: var(--Lexend);*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 r {
@@ -68,7 +70,8 @@ r {
 u {
     color: rgb(255, 255, 255);
     font-size: 1.25rem;
-    font-family: var(--Lexend);
+    /*font-family: var(--Lexend);*/
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
@@ -83,16 +86,19 @@ ul{
 }
 
 h1{
-    font-family: var(--Lexend);
+    /*font-family: var(--Lexend);*/
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
 }
 
 h2{
-    font-family: var(--Lexend);
+    /*font-family: var(--Lexend);*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h3{
-    font-family: var(--Noto);
+    /*font-family: var(--Noto);*/
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
 }
 
@@ -209,7 +215,8 @@ span{
     .nav .nav-brand a{
         padding: 1rem 0;
         display: block;
-        /* font-family: var(--Lexend); */
+        /*font-family: var(--Lexend);*/
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 1.6rem;
     }
 
@@ -758,7 +765,8 @@ main .site-content .post-content > .post-image .post-info span{
 }
 
 main .post-content .post-title a{
-    font-family: var(--Lexend);
+    /*font-family: var(--Lexend);*/
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
 }
 
@@ -778,7 +786,8 @@ main .post-content .post-title a{
     padding: .6rem .9rem;
     border-radius: 2rem;
     margin: 0 .3rem;
-    font-family: var(--Lexend);
+    /*font-family: var(--Lexend);*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .site-content .pagination .pages{
@@ -841,7 +850,8 @@ main .post-content .post-title a{
     width: 80%;
     height: 1.9rem;
     padding: .3rem .5rem;
-    font-family: var(--Lexend);
+    /*font-family: var(--Lexend);*/
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
 
