@@ -127,7 +127,7 @@ body {
     /*
     background: rgb(136, 208, 236);*/ /*sky-blue*/
     background: rgb(32.93, 71.31, 152.52);
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -784,7 +784,6 @@ button[type="submit"]:hover{
     overflow-x: auto;
 }
 /* SECTION TO PLACE MENU ITEM ON BOTTOM OF PAGE END */
-
 .nav__link {
     display: flex;
     /* Makes sure the icon is on top of the label/text */
