@@ -581,7 +581,7 @@ img:hover {
 
 
 /*  CODE FOR POPUP BOX BEGIN  */
-/* .popbanner,
+.popbanner,
 .content {
     position: absolute;
     top: 50%;
@@ -680,7 +680,7 @@ q {
     background: #27ae60;
     color: #fff;
     transition: 0.5s;
-} */
+}
 /*  CODE FOR POPUP BOX END  */
 
 
