@@ -52,7 +52,7 @@ e {
 
 g{
     text-decoration: none;
-    color: #00ff22;
+    color: #015c0d;
 }
 
 p{
@@ -61,6 +61,13 @@ p{
 }
 
 r {
+    color: rgb(255, 0, 0);
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+y {
     color: rgb(255, 255, 0);
     font-size: 1.15rem;
     font-weight: bold;
@@ -490,8 +497,71 @@ img:hover {
 /* IMAGE SLIDER END */
 
 
+/* pie images for Pie Options page BEGIN */
+.avatar1 {
+    background-image: url(../images/paidFibonacci/fibAKAtran.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /*border: 1px solid black;*/
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.avatar2 {
+    background-image: url(../images/paidFibonacci/fibDIV1blue.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /*border-radius: 75%;*/
+    /*border: 1px solid black;*/
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.avatar3 {
+    background-image: url(../images/paidFibonacci/fibDIV2blue.jpg);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /*border: 1px solid black;*/
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar4 {
+    background-image: url(../images/pie3Ten_Equal_INV.jpg);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar5 {
+    background-image: url(../images/paidFibonacci/fibPOPULARblack.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar6 {
+    background-image: url(../images/paidFibonacci/fibVANGUARDblack.png);
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    /* below code will put image to the right of text */
+    display: inline-block;
+    vertical-align: middle;
+}
+/* pie images for Pie Options page END */
 
 
 
