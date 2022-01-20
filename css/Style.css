@@ -928,7 +928,7 @@ main .site-content .post-content > .post-image > div{
 
 main .site-content .post-content > .post-image .img{
     width: 100%;
-    transition: all 1s ease;
+    /* transition: all 1s ease; */
 }
 
 main .site-content .post-content > .post-image .img:hover{
