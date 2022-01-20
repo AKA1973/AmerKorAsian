@@ -63,21 +63,21 @@ p{
 
 r {
     color: rgb(255, 0, 0);
-    font-size: 1.15rem;
+    font-size: 1.50rem;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* y {
+y {
     color: rgb(255, 255, 0);
-    font-size: 1.15rem;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
-} */
+}
 
 u {
     color: rgb(255, 255, 255);
-    font-size: 1.25rem;
+    font-size: 1.00rem;
     /*font-family: var(--Lexend);*/
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
