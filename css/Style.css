@@ -46,7 +46,8 @@ a{
 
 e {
     color: rgb(255, 255, 0);
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 1.15rem;
     font-weight: bold;
 }
 
@@ -67,12 +68,12 @@ r {
     text-decoration: none;
 }
 
-y {
+/* y {
     color: rgb(255, 255, 0);
     font-size: 1.15rem;
     font-weight: bold;
     text-decoration: none;
-}
+} */
 
 u {
     color: rgb(255, 255, 255);
@@ -166,7 +167,7 @@ span{
         width: 100%;
         min-height: 7vh;
         overflow: hidden;
-        transition: height 1s ease-in-out;
+        /* transition: height 1s ease-in-out; */
         position: fixed;
     }
 
@@ -454,14 +455,14 @@ span{
     /* with an opacity of zero, text is hidden by default */
     opacity: 0;
     text-decoration: none;
-    transition: 0.25s;
+    /* transition: 0.25s; */
 }
 
 
 /* Makes text color on back of image overlay white */
 .image__overlay > * {
     transform: translateY(20px);
-    transition: transform 0.25s;
+    /* transition: transform 0.25s; */
     color: #fff;
 }
 
@@ -620,7 +621,7 @@ img:hover {
     height: 350px;
     background: #fff;
     border-radius: 3px;
-    transition: 3x ease-in-out;
+    /* transition: 3x ease-in-out; */
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
 }
 
