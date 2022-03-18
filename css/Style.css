@@ -275,7 +275,7 @@ span{
     background-size: contain;
     /* background-attachment: fixed; */
     margin: 0px auto;
-    display: table;
+    /* display: table; */
 }
 
 
@@ -1352,7 +1352,7 @@ footer.footer .move-up span:hover{
         background-size: contain;
         background-attachment: scroll;
         margin: 0px auto;
-        display: table;
+        /* display: table; */
     }
 
     footer.footer .move-up{
