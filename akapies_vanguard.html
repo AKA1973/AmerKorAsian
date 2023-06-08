@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Below line of code makes code responsive to different size devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AKA Pies</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="icon" type="image/x-icon" href="./images/paidFibonacci/AKA.ico" /> <title>AmerKorAsian</title> -->
+    <link rel="icon" type="image/x-icon" href="./images/paidFibonacci/thickLog.ico" /> <title>AmerKorAsian</title>
+
+    <!-- Catamaran Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Noto Serif Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+
+    <style>
+        .maindiv{
+            width: 40%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            transform: translate(-50%, -50%);
+            background-image: url('../AmerKorAsian/images/ryanPieCurrent.png');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: slider 15s infinite linear;
+        }
+
+        @keyframes slider{
+            0%{background-image: url('../AmerKorAsian/images/ryanPieCurrent.png'); background-size: 100% 100%; }
+            40%{background-image: url('../AmerKorAsian/images/annualizedReturn.png'); background-size: 100% 100%; }
+            80%{background-image: url('../AmerKorAsian/images/marketsVSpies.png'); background-size: 100% 100%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="./index.html" id="motto">AmerKorAsian</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Code for text on top of FIB image -->
+    <div class="logo-banner">
+        <!-- <h1>AmerKorAsian</h1> -->
+        <h1>AmerKorAsian
+            <br>
+            Pie Options
+        </h1>
+    </div>
+
+
+    <main>
+    <!-- ----------x---------- PIE ICON SECTION --------x-------- -->
+    <!-- <div class="row">
+      <div class="details-content">
+        <div class="avatar1">
+          <a href="./aboutUS.html" class="nav__link nav___link--active">
+          <i class="material-icons"></i>
+          <span class="nav__text"><div class="avatar1"></div></span></a>
+        </div>
+
+        <div class="avatar2">
+          <a href="./aboutUS.html" class="nav__link nav___link--active">
+            <i class="material-icons"></i>
+            <span class="nav__text"><div class="avatar2"></div></span></a>
+        </div>
+
+        <div class="avatar3">
+          <a href="./aboutUS.html" class="nav__link nav___link--active">
+            <i class="material-icons"></i>
+            <span class="nav__text"><div class="avatar3"></div></span></a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- ----------x---------- AKA FUND PIE DETAIL --------x-------- -->
+    <div class="details-content">
+          <!-- Link to current month's PIE detail -->
+          <a href="./akapies_akaFund.html" class="nav__link nav___link--active">
+            <i class="material-icons"></i>
+            <!--<span class="nav__text"><div class="avatar1"></div></span></a>-->
+            <span class="nav__text"><div><b>AKA FUND          <gg>(LOW RISK)</gg></b>         <w><e>Fund holds <r>98 positions</r> in <r>36 equity sectors.</r></e></w></div></span></a>
+    </div>
+    <hr>
+
+    <!-- ----------x---------- DIVIDEND #1 PIE DETAIL --------x-------- -->
+    <div class="details-content">
+        <!-- Link to current month's PIE detail -->
+        <a href="./akapies_dividend1.html" class="nav__link nav___link--active">
+          <i class="material-icons"></i>
+          <!--<span class="nav__text"><div class="avatar2"></div></span></a>-->
+          <span class="nav__text"><div><b>DIVIDEND #1          <gg>(LOW RISK)</gg></b></div></span></a>
+  </div>
+  <hr>
+
+    <!-- ----------x---------- DIVIDEND #2 PIE --------x-------- -->
+    <div class="details-content">
+        <!-- Link to current month's PIE detail -->
+        <a href="./akapies_dividend2.html" class="nav__link nav___link--active">
+          <i class="material-icons"></i>
+          <!--<span class="nav__text"><div class="avatar3"></div></span></a>-->
+          <span class="nav__text"><div><b>DIVIDEND #2          <gg>(LOW RISK)</gg></b></div></span></a>
+  </div>
+  <hr>
+
+    <!-- ----------x---------- EQUALLY INVESTED PIE DETAIL --------x-------- -->
+    <!-- <div class="avatar4"></div> -->
+    <div class="details-content">
+        <!-- Link to current month's PIE detail -->
+        <a href="./akapies_equallyInvested.html" class="nav__link nav___link--active">
+          <i class="material-icons"></i>
+          <!--<span class="nav__text"><div class="avatar4"></div></span></a>-->
+          <span class="nav__text"><div><b>EQUALLY INVESTED          <r>(HIGH RISK)</r></b></div></span></a>
+  </div>
+  <hr>
+  
+    <!-- ----------x---------- POPULAR FUND PIE DETAIL --------x-------- -->
+    <!-- <div class="avatar5"></div> -->
+    <div class="details-content">
+        <!-- Link to current month's PIE detail -->
+        <a href="./akapies_popular.html" class="nav__link nav___link--active">
+          <i class="material-icons"></i>
+          <!--<span class="nav__text"><div class="avatar5"></div></span></a>-->
+          <span class="nav__text"><div><b>POPULAR FUND          <r>(HIGH RISK)</r></b></div></span></a>
+  </div>
+  <hr>
+  
+      <!-- ----------x---------- VANGUARD PIE DETAIL --------x-------- -->
+    <!-- <div class="avatar6"></div> -->
+    <b>VANGUARD FUND          <ee>(MEDIUM RISK)</ee></b>
+    <br>
+    <w>This pie is the main reason why I wanted to help others make money in the stock market. The fund is made up of my first portfolio that was at Vanguard.</w>
+
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+    
+      function drawChart() {
+    
+        var data = google.visualization.arrayToDataTable([
+          ['INDUSTRY', 'PERCENT IN PIE'],
+          ['Software & IT Services',    34.28],
+          ['Automobiles & Auto Parts',  10.18],
+          ['Financial Services',    8.93],
+          ['Personal and Household',    8.77],
+          ['Investment Banking',     8.52],
+          ['Healthcare',   8.38],
+          ['Aerospace & Defense',  8.37],
+          ['Specialty Retailers',    8.31],
+          ['Domestic Stock - General', 4.25],
+        ]);
+    
+        var options = {
+              title: 'INDUSTRIES', backgroundColor: 'transparent',
+              /*Makes Pie 3d*/
+              is3D: true,
+            };
+    
+            var chart = new google.visualization.PieChart(document.getElementById('vanguard_piechart'));
+            chart.draw(data, options);
+          }
+        </script>
+      
+          <body>
+              <!-- TO SET SZE AND POSITION OF CHART -->
+              <div id="vanguard_piechart" style="width: 1350px; height: 675px;"></div>
+          </body>
+
+        <div>
+            <!-- Link to current month's PIE detail -->
+            <iframe width="392" height="543" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=2F06808B9BA9091%2120699&authkey=%21AMdXWhAFp_YGWSE&em=2&AllowTyping=True&Item='VANGUARD%20FUND'!A1%3AB27&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&resen=true&ed1JS=false"></iframe>
+        </div>
+    <hr>
+
+    </main>
+        <!-- -----------x---------- Site Content -------------x------------>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+    <footer class="footer">
+        <div class="rights flex-row">
+            <h4 class="text-white">
+                <p>
+                    <div>
+                        <center><u>By using this website, you accept our Terms of Use and Privacy Policy.  All documents are available in our <a href="./documents.html"><r>Documents Library</r></a>.</u></center>
+
+                        <center><p><a href="./index.html"><y>AmerKorAsian </y></a><u>relies on information from various sources to be reliable, including clients and third parties, but cannot guarantee the accuracy and completeness of that information.</u></p></center>
+
+                        <center><p><u>AmerKorAsian invests based on a long-term horizon and focuses on the company’s fundamentals. <em>No investment advice is neither given or asked for by AmerKorAsian.</em> All investment decisions are made solely by AmerKorAsian without regard to outside factors. If you decide to invest with AmerKorAsian, you agree and understand that no investment advice was offered to you by AmerKorAsian or anyone associated with AmerKorAsian about any investments.</u></p></center>
+
+                        <center><p><u><em>All investing involves risk,</em> including the risk of losing the money you invest. Past performance does not guarantee future results. Borrowing on margin can add to these risks, and you should learn more about the risks before borrowing. Nothing in this informational site is an offer, solicitation of an offer, or advice to buy or sell any security. <em>You are encouraged to consult your personal investment, legal, and tax advisors.</em> All product and company names are trademarks™ or registered® trademarks™ of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</u></p></center>
+
+                        <center><p><h2>© Copyright 2023 | AmerKorAsian, LLC</h2></p></center>
+                    </div>
+                </p>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+        <br>
+        <br>
+        <br>
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+
+    <!-- BOTTOM NAVIGATION MENUBAR BEGIN -->
+    <nav class="nav-links">
+        <a href="./homepage2.0.html" class="nav__link nav___link--active">
+            <i class="material-icons">home</i>
+            <span class="nav__text">Home</span>
+        </a>
+        <a href="./akapies2.0.html" class="nav__link nav__link--active">
+            <i class="material-icons">pie_chart</i>
+            <span class="nav__text">AKA Pies</span>
+        </a>
+        <a href="./documents.html" class="nav__link nav___link--active">
+            <i class="material-icons">description</i>
+            <span class="nav__text">Documents</span>
+        </a>
+        <a href="./aboutUS.html" class="nav__link nav___link--active">
+            <i class="material-icons">people</i>
+            <span class="nav__text">About Us</span>
+        </a>
+        <a href="./contactpage.html" class="nav__link nav____link--active">
+            <i class="material-icons">email</i>
+            <span class="nav__text">Contact</span>
+        </a>
+    </nav>
+    <!-- BOTTOM NAVIGATION MENUBAR END -->
+    
+<!-- -------------x------------- JavaScript --------------------x------------------- -->
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

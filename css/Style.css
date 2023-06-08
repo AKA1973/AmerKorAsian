@@ -43,6 +43,19 @@ a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+b {
+    color: rgb(0, 0, 153);
+    /* font-size: 2rem; */
+    font-size: 3.0rem;
+    font-weight: bold;
+}
+
+bb {
+    color: rgb(0, 0, 153);
+    /* font-size: 2rem; */
+    font-size: 1.25rem;
+    font-weight: bold;
+}
 
 e {
     color: rgb(255, 255, 0);
@@ -51,9 +64,23 @@ e {
     font-weight: bold;
 }
 
+ee {
+    color: rgb(255, 255, 0);
+    /* font-size: 2rem; */
+    font-size: 1.50rem;
+    font-weight: bold;
+}
+
 g{
     text-decoration: none;
     color: #015c0d;
+}
+
+gg {
+    color: #015c0d;
+    /* font-size: 2rem; */
+    font-size: 1.50rem;
+    font-weight: bold;
 }
 
 p{
@@ -953,8 +980,10 @@ main .blog-post .blog-content{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 80%;
-    margin: 3rem 2rem;
+    /* For display size of images on carousel */
+    width: 70%;
+    /* the top margin will be 3px, right margin will be 5px, bottom margin will be 2px, left margin will be 6px */
+    margin: 3rem 5rem 2rem 4rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -1020,9 +1049,12 @@ main .site-content .post-content > .post-image .post-info{
     background: var(--sky);
     padding: 1rem;
     position: absolute;
+    /* Places item in specific location begin */
     bottom: 0%;
-    left: 20vw;
-    border-radius: 3rem;
+    /*top: -2%;*/
+    left: 9vw;
+    /* Places item in specific location end */
+    border-radius: 2.5rem;
 }
 
 main .site-content .post-content > .post-image > div{
