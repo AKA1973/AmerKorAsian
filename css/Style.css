@@ -387,6 +387,28 @@ span{
     animation: animate 20s linear infinite;
 }
 
+/* Code for scrolling background using different color BEGIN */
+#motto2 {
+    font-size: 30px;
+    /* text-align: center; */
+    bottom: 0;
+    background: linear-gradient(90deg, #5144ff, #0413eed7, #f2f60a, #0033ff, #283ae0);
+    /*background: linear-gradient(90deg, #262626, #cbc4ad, #f9a616, #188324, #fefe33, #d6d5a4);*/
+    background-size: 400%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: px;
+    font-weight: 600;
+    word-spacing: 5px;
+
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 20s linear infinite;
+}
+/* Code for scrolling background using different color END */
+
+
 #motto-center {
     font-size: 30px;
     text-align: center;
